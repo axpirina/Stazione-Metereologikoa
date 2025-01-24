@@ -12,7 +12,7 @@ ESP8266an oinarritutako estazio metereologikoa garatu dugu. Tenperatura (ºC) et
 ## Hardwarea 
 Eskema elektrikoa eta kaxa. 
 <p align="center">
-  <img src="/Irudiak/Scheme.png" width="880" height="300">
+  <img src="/Irudiak/Scheme.png" width="400" height="300">
   <img src="/Irudiak/kaxa.jpeg" width="460" height="260">
 </p>
 
@@ -22,7 +22,6 @@ Eskema elektrikoa eta kaxa.
 |---|---|---|
 | NodeMCU V2| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/placas-de-desarrollo/37815-placa-de-desarrollo-nodemcu-v2-lua-esp8266.html)|
 | DHT11| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/sensores/38012-sensor-de-temperatura-y-humedad-digital-dht11-para-arduino.html)|
-| 1 Relay Shield| 1 |[E-IKA](https://www.e-ika.com/modulo-rele-1-canal-para-arduino)|
 | Jumper| 1 |[E-IKA](https://www.e-ika.com/cables-dupont-100cm-h-h-40-uds)|
 
 > Oharra: Relay shield-a erosterako garaian kontuan izan 3,3V tako irteerez gidatu daitekeen errelea izan behar duela, ez 5Vz soilik. HON WEI etxeko JQC3F errele shield-ek adibidez funtzio hau betetzen dute.
