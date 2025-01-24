@@ -24,7 +24,7 @@ Eskema elektrikoa eta kaxa.
 | DHT11| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/sensores/38012-sensor-de-temperatura-y-humedad-digital-dht11-para-arduino.html)|
 | Jumper| 1 |[E-IKA](https://www.e-ika.com/cables-dupont-100cm-h-h-40-uds)|
 
-> Oharra: Relay shield-a erosterako garaian kontuan izan 3,3V tako irteerez gidatu daitekeen errelea izan behar duela, ez 5Vz soilik. HON WEI etxeko JQC3F errele shield-ek adibidez funtzio hau betetzen dute.
+> Oharra: 3D inprimagailu bat hobesten da kaxa egiteko.
 
 ## NODEMCU V2 aren Pinout-a
 Oso kontuan izan Arduino kodean Nodemcu-aren GPIO zenbakiak adierazi beharko dituzuela.
@@ -40,10 +40,7 @@ ESP8266 mikrokontrolagailua programatu ahal izateko Arduino IDE-a eta zenbait li
 2. [Installing NodeMCU on Arduino IDE](https://projecthub.arduino.cc/PatelDarshil/getting-started-with-nodemcu-esp8266-on-arduino-ide-b193c3)
 3. Hurrengo liburutegiak instalatu Arduino IDE-an.
    - ESP8266WiFi.h
-   - WiFiClient.h
-   - ESP8266WebServer.h
-   - FS.h 
-   - ctype.h 
+   - PubSubClient.h
    - DHT.h
 
   Eta Horretarako hurrengo liburutegia konposatuak instalatzea nahikoa dela ikusi da 2025ean:
@@ -51,7 +48,7 @@ ESP8266 mikrokontrolagailua programatu ahal izateko Arduino IDE-a eta zenbait li
      - SimpleWifiClient by Toemblom
      - IoTtweet by Isaranu
      - DHT Sensor Libray by Adafruit
-     - AVision_ESP8266 by AVision
+     - PubSubClient by Nick O`Leary
 
 4. [Termostatoaren Arduino Kodea](/ESP8266-DHT.ino)
 
@@ -65,15 +62,18 @@ const char* ssid     = "yourWiFiSSID";
 const char* password = "yourWiFiPassword"; 
 ~~~
  
-  > Tº KONFIGURAZIOA: ESP8266-DHT.ino artxiboan hozgailuaren Tº max eta min konfiguratu (ºC).
+  > THINGSBOARD-eko KONFIGURAZIOA: MQTT broket, topic eta decive token-a.
 ~~~
-int heatOn = 5;
-int heatOff = 15;
+const char* mqtt_server = "demo.thingsboard.io";
+const char* mqtt_user = "yourDeviceToken";
+const char* mqtt_password = "";
+
+const char* topic = "v1/devices/me/telemetry";
 ~~~
 
-> IP HELBIDEA KONFIGURATU: Zuen sareko egituraren arabera IP helbide bat eman NodeMcu-ari.
+> DATUEN MAIZTASUNA KONFIGURATU: Datuak zenbatero igoko diren erabaki.
 
-**Adibide honetako IP helbidea:** `192, 168, 0, 201`
+delay(5000); // 5 segundoko tartea argitalpenen artean
 
 ~~~
 WiFi.config(IPAddress(192, 168, 0, 201), IPAddress(192, 168, 0, 1), IPAddress(255, 255, 255, 0));
@@ -81,8 +81,7 @@ WiFi.config(IPAddress(192, 168, 0, 201), IPAddress(192, 168, 0, 1), IPAddress(25
 
 ## Estekak
  
-Adibide bideoa https://youtu.be/uq5OR8RlGLc
-
-Instructables https://www.instructables.com/ESP8266-12E-DHT-Thermostat/
+Diy IOT Tknika [https://youtu.be/uq5OR8RlGLc](https://www.youtube.com/watch?v=z61bxGR6Poo&list=PLOYSs5_FlYNtzRIuRgQhgzTNdCzludb6r&index=24)
+NODE RED eta THINGSBOARD Oteitza Lizeoa [https://youtu.be/uq5OR8RlGLc](https://www.youtube.com/playlist?list=PLLzgegoyyqcNHDIyPvh3pWa9Zu6rSWcN-)
 
 ### Thanks to @dmainmon
