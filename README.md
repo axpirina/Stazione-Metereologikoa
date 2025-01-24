@@ -15,6 +15,8 @@ Electrical scheme and enclosure.
   <img src="/Irudiak/kaxa.jpeg" width="460" height="260">
 </p>
 
+[Enclosure](https://www.thingiverse.com/thing:2510742)
+
 ## List of Components
 
 |Component| Quantity | Link | 
