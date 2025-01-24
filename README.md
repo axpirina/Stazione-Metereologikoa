@@ -54,7 +54,7 @@ ESP8266 mikrokontrolagailua programatu ahal izateko Arduino IDE-a eta zenbait li
 
 
 ## Konfigurazioa
-Arduino kodean gure Wifi-a eta hozgailuaren Tºak konfiguratu beharko ditugu.
+Arduino kodean gure Wifi-a eta Thingsboard-eko Device-a konfiguratu beharko ditugu.
 
  > WIFI-a: ESP8266-DHT.ino artxiboan termostatoa zein wifi-tara konektatuko den konfiguratu. Wifi honek **192.168.1.X** tartean banatu beharko ditu helbideak.
 ~~~
@@ -73,10 +73,8 @@ const char* topic = "v1/devices/me/telemetry";
 
 > DATUEN MAIZTASUNA KONFIGURATU: Datuak zenbatero igoko diren erabaki.
 
-delay(5000); // 5 segundoko tartea argitalpenen artean
-
 ~~~
-WiFi.config(IPAddress(192, 168, 0, 201), IPAddress(192, 168, 0, 1), IPAddress(255, 255, 255, 0));
+delay(5000); // 5 segundoko tartea argitalpenen artean
 ~~~
 
 ## Estekak
@@ -84,4 +82,3 @@ WiFi.config(IPAddress(192, 168, 0, 201), IPAddress(192, 168, 0, 1), IPAddress(25
 Diy IOT Tknika [https://youtu.be/uq5OR8RlGLc](https://www.youtube.com/watch?v=z61bxGR6Poo&list=PLOYSs5_FlYNtzRIuRgQhgzTNdCzludb6r&index=24)
 NODE RED eta THINGSBOARD Oteitza Lizeoa [https://youtu.be/uq5OR8RlGLc](https://www.youtube.com/playlist?list=PLLzgegoyyqcNHDIyPvh3pWa9Zu6rSWcN-)
 
-### Thanks to @dmainmon
