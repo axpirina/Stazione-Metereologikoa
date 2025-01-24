@@ -1,10 +1,9 @@
-# ESP8266an oinarrituriko IoT Termostatoa 
-
-Hozgailu baten kontrola izango duen Web Termostatoa da hurrengo proiektua. ESP8266 (NodMCU) mikrokontrolagailuan oinarrituriko termostatoak HOZGAILU baten kontrola hartuko du WEB ZERBITZAILE baten bitartez. Mikrokontrolagailuak DHT11 sentsoreak Tº eta Hº datuak jaso, prosezatu eta ERRELE baten bitartez hozgailua ON eta OFF egoeratan jarriko ditu. 
+# ESP8266an oinarrituriko Estazio Metereologikoa
+ESP8266an oinarritutako estazio metereologikoa garatu dugu. Tenperatura (ºC) eta Hezetasuna (%) atzemango ditu eta Thingsboard DEMO plataforman bistarazi. Hezetasunari alarma bat jarriko digu neurri jakin batean.
 
 ## ERABILERA
  
- Web nabigatzaile baten bitartez, [192.168.1.201](http://192.168.1.201) helbidean aurkituko dugu gure termostatoa. WebTermostato interfase bitartez  hozgailuaren kontsigna tenperaturak konfiguratu ahal izango ditugu gure hozgailuaren Tº max eta Tº min kontrolatzeko.
+ Thingsboard DEMO web-aren bitartez ikusiko dugu gure eztazio metereologikoa [Public Dashboard]([http://192.168.1.201](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce)). Thingsboard-en app-a ere instalatu dezakegu web-a mugikorrean ikusteko [Thingsboard APP]((https://play.google.com/store/apps/details?id=org.thingsboard.demo.app)). 
 <p align="center">
   <img src="/Irudiak/WebTermostatoa.png" width="600" height="210">
 </p>
