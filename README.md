@@ -50,7 +50,7 @@ ESP8266 mikrokontrolagailua programatu ahal izateko Arduino IDE-a eta zenbait li
      - DHT Sensor Libray by Adafruit
      - PubSubClient by Nick O`Leary
 
-4. [Eztazioaren Arduino Kodea](/Station Arduino Code.ino)
+4. [Eztazioaren Arduino Kodea](/StationArduinoCode.ino)
 
 
 ## Konfigurazioa
