@@ -12,7 +12,7 @@ ESP8266an oinarritutako estazio metereologikoa garatu dugu. Tenperatura (ºC) et
 ## Hardwarea 
 Eskema elektrikoa eta kaxa. 
 <p align="center">
-  <img src="/Irudiak/Termostatoa_bb.png" width="880" height="300">
+  <img src="/Irudiak/Scheme.png" width="880" height="300">
   <img src="/Irudiak/kaxa.jpeg" width="460" height="260">
 </p>
 
