@@ -5,14 +5,14 @@ ESP8266an oinarritutako estazio metereologikoa garatu dugu. Tenperatura (ºC) et
  
  Thingsboard DEMO web-aren bitartez ikusiko dugu gure eztazio metereologikoa [Public Dashboard]([http://192.168.1.201](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce)). Thingsboard-en app-a ere instalatu dezakegu web-a mugikorrean ikusteko [Thingsboard APP]((https://play.google.com/store/apps/details?id=org.thingsboard.demo.app)). 
 <p align="center">
-  <img src="/Irudiak/Thingsboard.png" width="600" height="210">
+  <img src="/Irudiak/Thingsboard.png" width="800" height="600">
 </p>
 
 
 ## Hardwarea 
 Eskema elektrikoa eta kaxa. 
 <p align="center">
-  <img src="/Irudiak/Termostatoa_bb.png" width="324" height="300">
+  <img src="/Irudiak/Termostatoa_bb.png" width="880" height="300">
   <img src="/Irudiak/kaxa.jpeg" width="460" height="260">
 </p>
 
