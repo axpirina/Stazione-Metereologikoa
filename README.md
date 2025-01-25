@@ -2,8 +2,6 @@
 
 We have developed a weather station based on the **ESP8266** microcontroller, providing an efficient and cost-effective solution for environmental monitoring. This weather station is designed to measure **Temperature (ºC)**, **Humidity (%)** and **Dew Point (ºC)** with the data being displayed on the **Thingsboard DEMO** platform for easy visualization and analysis.  
 
-## Demo Dashboard-a
-
 <p align="center">
   <img src="/Irudiak/Thingsboard.png" width="800" height="400">
 </p>
