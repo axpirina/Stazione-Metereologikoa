@@ -17,10 +17,13 @@ This project not only serves as a practical application of IoT (Internet of Thin
 
 ## WEB Resources
 
-We will visualize our weather station using the **Thingsboard DEMO** web platform: [Public Dashboard](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce).  
+We will visualize our weather station using the **Thingsboard DEMO** web platform: [Public Dashboard](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce). 
+
 <p align="center">
-  <img src="/Irudiak/Thingsboard.png" width="800" height="400">
+  <img src="/Irudiak/Thingsboard.png" width="400" height="200" style="margin-right: 20px;">
+  <img src="/Irudiak/App.png" width="400" height="200">
 </p>
+
 
 Additionally, the Thingsboard app can be installed to view the dashboard on mobile devices: [Thingsboard APP](https://play.google.com/store/apps/details?id=org.thingsboard.demo.app).
 
