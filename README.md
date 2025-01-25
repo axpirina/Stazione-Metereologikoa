@@ -31,9 +31,8 @@ We will visualize our weather station using the [Thingsboard DEMO](https://demo.
   </div>
 </div>
 
+
 Additionally, Thingsboard offers a native Android app for viewing dashboards on mobile devices, ensuring that users can monitor their data anywhere and anytime. The app is available for download from the Google Play Store [APP](https://play.google.com/store/apps/details?id=org.thingsboard.demo.app).
-
-
 
 ## Hardware Resouces
 To build this weather station, the following hardware components are necessary:
