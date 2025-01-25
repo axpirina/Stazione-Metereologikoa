@@ -15,7 +15,7 @@ This project not only serves as a practical application of IoT (Internet of Thin
 - **Alarm systems:** Implement threshold-based alerts for improved responsiveness to environmental changes.  
 
 
-## USAGE
+## WEB Resources
 
 We will visualize our weather station using the **Thingsboard DEMO** web platform: [Public Dashboard](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce). Additionally, the Thingsboard app can be installed to view the dashboard on mobile devices: [Thingsboard APP](https://play.google.com/store/apps/details?id=org.thingsboard.demo.app). 
 <p align="center">
