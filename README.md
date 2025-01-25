@@ -9,9 +9,9 @@ We have developed a weather station based on the **ESP8266** microcontroller, pr
 The system also includes a feature to **trigger an alarm** when the humidity level surpasses a specific threshold, ensuring real-time awareness of critical environmental changes. This capability is especially useful in scenarios like agriculture, where maintaining optimal humidity is crucial, or in indoor environments where air quality monitoring is a priority.  
 
 This project not only serves as a practical application of IoT (Internet of Things) principles but also offers an educational platform for students and enthusiasts to explore:  
-- **Sensor integration:** Learn how to interface temperature and humidity sensors with the ESP8266.  
-- **Data communication:** Understand the MQTT protocol used to send sensor data to the cloud.  
-- **Platform interaction:** Explore how Thingsboard visualizes real-time data and allows for advanced analytics.  
+- **Sensor integration:** Learn how to interface temperature and humidity sensors with the **ESP8266**.  
+- **Data communication:** Understand the **MQTT** protocol used to send sensor data to the cloud.  
+- **Platform interaction:** Explore how **Thingsboard** visualizes real-time data and allows for advanced analytics.  
 - **Alarm systems:** Implement threshold-based alerts for improved responsiveness to environmental changes.  
 
 
