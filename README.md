@@ -38,21 +38,26 @@ Additionally, Thingsboard offers a native Android app for viewing dashboards on 
 ## Hardware Resouces
 To build this weather station, the following hardware components are necessary:
 
-|Component| Quantity | Link | 
-|---|---|---|
-| NodeMCU V2| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/placas-de-desarrollo/37815-placa-de-desarrollo-nodemcu-v2-lua-esp8266.html)|
-| DHT11| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/sensores/38012-sensor-de-temperatura-y-humedad-digital-dht11-para-arduino.html)|
-| Jumper| 1 |[E-IKA](https://www.e-ika.com/cables-dupont-100cm-h-h-40-uds)|
+|Component| Quantity | Link | Model|
+|---|---|---|---|
+| NodeMCU V2| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/placas-de-desarrollo/37815-placa-de-desarrollo-nodemcu-v2-lua-esp8266.html)|Amica|
+| DHT11| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/sensores/38012-sensor-de-temperatura-y-humedad-digital-dht11-para-arduino.html)|Tº & Hº|
+| Jumper Dupont| 1 |[E-IKA](https://www.e-ika.com/cables-dupont-100cm-h-h-40-uds)|Female-Female|
 
-> Note: A 3D printer is recommended to create the enclosure.
+<div align="center">
+  <div style="display: flex; justify-content: center; align-items: center; gap: 100px;">
+    <img src="/Irudiak/kaxa.jpeg" width="460" height="260" style="margin-right: 10px;">
+    <img src="/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
+    <img src="/Irudiak/DHT11.png" width="200" height="260" style="margin-right: 10px;">
+    <img src="/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
+    <img src="/Irudiak/Dupont.png" width="200" height="260" style="margin-left: 10px;">
+  </div>
+</div>
+
+> **Note:** A 3D printer is recommended to create the enclosure.
 This hardware setup provides an efficient and reliable foundation for the project.
 > You can find a possible hardware enclosure for this project at the following link:
 [Link to the Hardware Enclosure Project](https://www.thingiverse.com/thing:2510742)
-
-<p align="center">
-  
-  <img src="/Irudiak/kaxa.jpeg" width="460" height="260">
-</p>
 
 
 ## NodeMCU V2 Pinout
