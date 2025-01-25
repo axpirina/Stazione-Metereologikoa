@@ -8,7 +8,7 @@ const char* password = "yourWiFiPassword";
 const char* mqtt_server = "demo.thingsboard.io";
 
 // MQTT autentifikaziorako erabiltzaile-izena eta pasahitza
-const char* mqtt_user = "yourWiFiSSID";
+const char* mqtt_user = "yourDeviceToken";
 const char* mqtt_password = "";
 
 // DHT konfigurazioa
