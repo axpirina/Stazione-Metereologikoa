@@ -6,7 +6,7 @@ We have developed a weather station based on the **ESP8266** microcontroller, pr
   <img src="/Irudiak/Thingsboard.png" width="800" height="400">
 </p>
 
-View the real-time data on **Thingsboard DEMO** by clicking the following [link](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce)
+View the real-time data on **Thingsboard LIVE Dashboard** by clicking the following [link](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce)
 
 The system also includes a feature to **trigger an alarm** when the humidity level surpasses a specific threshold, ensuring real-time awareness of critical environmental changes. This capability is especially useful in scenarios like agriculture, where maintaining optimal humidity is crucial, or in indoor environments where air quality monitoring is a priority.  
 
@@ -25,7 +25,7 @@ We will visualize our weather station using the [Thingsboard DEMO](https://demo.
 
 <div align="center">
   <div style="display: flex; justify-content: center; align-items: center; gap: 200px;">
-    <img src="/Irudiak/Thingsboard.png" width="600" height="300" style="margin-right: 50px;">
+    <img src="/Irudiak/DEMO" width="600" height="300" style="margin-right: 50px;">
     <img src="/Irudiak/White.png" width="100" height="300" style="margin-right: 50px;">
     <img src="/Irudiak/App.jpg" width="150" height="300" style="margin-left: 50px;">
   </div>
