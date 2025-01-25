@@ -2,9 +2,15 @@
 
 We have developed a weather station based on the **ESP8266** microcontroller, providing an efficient and cost-effective solution for environmental monitoring. This weather station is designed to measure **Temperature (ºC)**, **Humidity (%)** and **Dew Point (ºC)** with the data being displayed on the **Thingsboard DEMO** platform for easy visualization and analysis.  
 
-<p align="center">
-  <img src="/Irudiak/Thingsboard.png" width="800" height="400">
-</p>
+<div align="center">
+    <iframe 
+        src="https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce" 
+        width="800" 
+        height="600" 
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
 
 The system also includes a feature to **trigger an alarm** when the humidity level surpasses a specific threshold, ensuring real-time awareness of critical environmental changes. This capability is especially useful in scenarios like agriculture, where maintaining optimal humidity is crucial, or in indoor environments where air quality monitoring is a priority.  
 
