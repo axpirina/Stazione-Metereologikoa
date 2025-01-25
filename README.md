@@ -128,7 +128,7 @@ const char* mqtt_user = "yourDeviceToken";   // Create a new Device in Thingboar
 const char* mqtt_password = "";     // Leave as it is
 
 // DHT configuration
-#define DHTPIN 4 // DHT11 data pin (GPIO4 = D2 on NodeMCU)
+#define DHTPIN 4 // DHT11 data pin (GPI14 = D5 on NodeMCU)
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -239,6 +239,10 @@ const char* mqtt_server = "demo.thingsboard.io";   // Leave as it is
 const char* mqtt_user = "yourDeviceToken";     // Create a new Device in ThingboardDemo.io and get its access token.
 const char* mqtt_password = "";     // Leave as it is
 ```
+
+  > DHT11 and NODN 4 // DHT11 data pin (GPI14 = D5 on NodeMCU)
+```
+
 ```cpp
 const char* topic = "v1/devices/me/telemetry";   // Leave as it is
 ```
