@@ -85,7 +85,12 @@ To program the ESP8266 microcontroller, you will need the Arduino IDE and severa
 </p>
    
 3. [Installing NodeMCU on Arduino IDE](https://projecthub.arduino.cc/PatelDarshil/getting-started-with-nodemcu-esp8266-on-arduino-ide-b193c3)
-4. Install the following libraries in Arduino IDE:
+<p align="center">
+  <img src="/Irudiak/Board.png" width="600" height="300">
+</p>
+
+   
+5. Install the following libraries in the Arduino IDE. To do this, open the Library Manager by navigating to **Sketch** > **Include Library** > **Manage Libraries**.
    - ESP8266WiFi.h
    - PubSubClient.h
    - DHT.h
@@ -97,7 +102,30 @@ To program the ESP8266 microcontroller, you will need the Arduino IDE and severa
      - DHT Sensor Library by Adafruit
      - PubSubClient by Nick O`Leary
 
-4. [Arduino Code for the Station](/StationArduinoCode.ino)
+4. Upload the Arduino code I will provide below to the NodeMCU. If everything has gone well, you will find the section for parameterizing the code further ahead.
+ [Arduino Code for the Weather Station](/StationArduinoCode.ino)
+
+```cpp
+// The setup function runs once when the board starts
+void setup() {
+  // Initialize digital pin LED_BUILTIN as an output
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+// The loop function runs repeatedly
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH); // Turn the LED on (HIGH voltage)
+  delay(1000);                     // Wait for 1 second
+  digitalWrite(LED_BUILTIN, LOW);  // Turn the LED off (LOW voltage)
+  delay(1000);                     // Wait for 1 second
+}
+```
+
+
+
+
+
+
 
 ## Configuration
 In the Arduino code, configure your WiFi and the Thingsboard device.
