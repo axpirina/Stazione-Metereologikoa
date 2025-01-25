@@ -21,7 +21,7 @@ We will visualize our weather station using the **Thingsboard DEMO** web platfor
 
 <p align="center">
   <img src="/Irudiak/Thingsboard.png" width="400" height="200" style="margin-right: 20px;">
-  <img src="/Irudiak/App.png" width="400" height="200">
+  <img src="/Irudiak/App.jpg" width="400" height="200">
 </p>
 
 
