@@ -128,7 +128,7 @@ const char* mqtt_user = "yourDeviceToken";   // Create a new Device in Thingboar
 const char* mqtt_password = "";     // Leave as it is
 
 // DHT configuration
-#define DHTPIN 4 // DHT11 data pin (GPI14 = D5 on NodeMCU)
+#define DHTPIN 2 // DHT11 data pin (GPI14 = D5 on NodeMCU)
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -236,11 +236,13 @@ const char* password = "yourWiFiPassword"; // Give your WIFI password
   > MQTT Connection: The device connects to the Thingsboard server using MQTT with authentication (device token as mqtt_user).
 ```cpp
 const char* mqtt_server = "demo.thingsboard.io";   // Leave as it is
-const char* mqtt_user = "yourDeviceToken";     // Create a new Device in ThingboardDemo.io and get its access token.
+const char* mqtt_user = "yourDeviceToken";     // Create a new Device in Diy IOT Tknika [Thingsboard](https://demo.thingsboard.io/home)  and get its access token.
 const char* mqtt_password = "";     // Leave as it is
 ```
 
-  > DHT11 and NODN 4 // DHT11 data pin (GPI14 = D5 on NodeMCU)
+  > DHT11 and NODEMCU Connection:  Look at the electrical scheme. The DHT11 is connected to D5 (GPIO14)
+```cpp
+#define DHTPIN 14 // DHT11 data pin (GPI14 = D5 on NodeMCU)
 ```
 
 ```cpp
@@ -252,7 +254,7 @@ const char* topic = "v1/devices/me/telemetry";   // Leave as it is
 delay(5000); // Interval of 5 seconds between publications
 ```
 
-## Links
+## Links                            
  
-Diy IOT Tknika [https://youtu.be/uq5OR8RlGLc](https://www.youtube.com/watch?v=z61bxGR6Poo&list=PLOYSs5_FlYNtzRIuRgQhgzTNdCzludb6r&index=24)  
-NODE RED and THINGSBOARD Oteitza Lizeoa [https://youtu.be/uq5OR8RlGLc](https://www.youtube.com/playlist?list=PLLzgegoyyqcNHDIyPvh3pWa9Zu6rSWcN-)
+Diy IOT Tknika [Diy IOT Tknika](https://www.youtube.com/watch?v=z61bxGR6Poo&list=PLOYSs5_FlYNtzRIuRgQhgzTNdCzludb6r&index=24)  
+NODE RED and THINGSBOARD Oteitza Lizeoa [NODE RED and THINGSBOARD Oteitza Lizeoa](https://www.youtube.com/playlist?list=PLLzgegoyyqcNHDIyPvh3pWa9Zu6rSWcN-)
