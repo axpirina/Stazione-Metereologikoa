@@ -65,23 +65,27 @@ Keep in mind that the GPIO numbers of the NodeMCU must be specified in the Ardui
   <img src="/Irudiak/NodeMCU_Pinout.png" width="800" height="600">
 </p>
 
-## Hardware Resouces
-Electrical scheme and enclosure. 
+## Electrical Scheme 
+Below, you will find the electrical circuit schematic. Make sure to connect everything correctly and define the pins you connected in the schematic within the program. The electrical schematic has been created using [Fritzing](https://www.fritzing.com).
+
 <p align="center">
-  <img src="/Irudiak/Scheme.png" width="400" height="300">
-  <img src="/Irudiak/kaxa.jpeg" width="460" height="260">
+  <img src="/Irudiak/Scheme.png" width="600" height="450">
 </p>
 
-[Enclosure](https://www.thingiverse.com/thing:2510742)
-
+> **Note:** Please ensure that all connections are made correctly and that the voltage polarities are respected.
 
 
 ## Arduino IDE and Code
-To program the ESP8266 microcontroller, you will need the Arduino IDE and several libraries. Essentially, the **ESP8266-DHT.ino** file must be uploaded to the **NodeMCU** using **Arduino IDE**.
+To program the ESP8266 microcontroller, you will need the Arduino IDE and several libraries. Essentially, the **ESP8266-DHT.ino** file must be uploaded to the **NodeMCU** using **Arduino IDE**. Follow the steps:
 
 1. [Arduino IDE Download](https://www.arduino.cc/en/software)
-2. [Installing NodeMCU on Arduino IDE](https://projecthub.arduino.cc/PatelDarshil/getting-started-with-nodemcu-esp8266-on-arduino-ide-b193c3)
-3. Install the following libraries in Arduino IDE:
+
+<p align="center">
+  <img src="/Irudiak/IDE.png" width="600" height="450">
+</p>
+   
+3. [Installing NodeMCU on Arduino IDE](https://projecthub.arduino.cc/PatelDarshil/getting-started-with-nodemcu-esp8266-on-arduino-ide-b193c3)
+4. Install the following libraries in Arduino IDE:
    - ESP8266WiFi.h
    - PubSubClient.h
    - DHT.h
