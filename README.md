@@ -1,6 +1,6 @@
 # Weather Station Based on ESP8266  
 
-We have developed a weather station based on the **ESP8266** microcontroller, providing an efficient and cost-effective solution for environmental monitoring. This weather station is designed to measure **Temperature (ºC)** and **Humidity (%)**, with the data being displayed on the **Thingsboard DEMO** platform for easy visualization and analysis.  
+We have developed a weather station based on the **ESP8266** microcontroller, providing an efficient and cost-effective solution for environmental monitoring. This weather station is designed to measure **Temperature (ºC)**, **Humidity (%)** and **Dew Point (ºC)** with the data being displayed on the **Thingsboard DEMO** platform for easy visualization and analysis.  
 
 The system also includes a feature to **trigger an alarm** when the humidity level surpasses a specific threshold, ensuring real-time awareness of critical environmental changes. This capability is especially useful in scenarios like agriculture, where maintaining optimal humidity is crucial, or in indoor environments where air quality monitoring is a priority.  
 
