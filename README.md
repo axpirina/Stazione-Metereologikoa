@@ -75,7 +75,7 @@ Below, you will find the electrical circuit schematic. Make sure to connect ever
 > **Note:** Please ensure that all connections are made correctly and that the voltage polarities are respected.
 
 
-## Arduino IDE and Code
+## Arduino IDE
 To program the ESP8266 microcontroller, you will need the Arduino IDE and several libraries. Essentially, the **ESP8266-DHT.ino** file must be uploaded to the **NodeMCU** using **Arduino IDE**. Follow the steps:
 
 1. [Arduino IDE Download](https://www.arduino.cc/en/software)
@@ -95,61 +95,158 @@ To program the ESP8266 microcontroller, you will need the Arduino IDE and severa
    - PubSubClient.h
    - DHT.h
 
-  Additionally, as of 2025, the following compiled libraries have been found sufficient:
+    Additionally, as of 2025, the following compiled libraries have been found sufficient:
 
      - SimpleWifiClient by Toemblom
      - IoTtweet by Isaranu
      - DHT Sensor Library by Adafruit
      - PubSubClient by Nick O`Leary
 
-4. Upload the Arduino code I will provide below to the NodeMCU. If everything has gone well, you will find the section for parameterizing the code further ahead.
+
+## Arduino Code
+Upload the Arduino code provide below to the NodeMCU. If everything has gone well, you will find the section for parameterizing the code further ahead.
  [Arduino Code for the Weather Station](/StationArduinoCode.ino)
 
 ```cpp
-// The setup function runs once when the board starts
-void setup() {
-  // Initialize digital pin LED_BUILTIN as an output
-  pinMode(LED_BUILTIN, OUTPUT);
+/*ESP8266 Weather Station with Thingsboard Integration. This project demonstrates how to use the **ESP8266** microcontroller to monitor environmental data (temperature, humidity, and dew point)
+and send it to the **Thingsboard** IoT platform via MQTT.
+This code is under a Creative Commons license.
+By Axpi.
+*/
+
+#include <ESP8266WiFi.h> // WiFi library for ESP8266
+#include <PubSubClient.h>
+#include <DHT.h>
+
+// WiFi and MQTT configuration
+const char* ssid = "yourWiFiSSID";    // Give your WIFI name
+const char* password = "yourWiFiPassword";   // Give your WIFI password 
+const char* mqtt_server = "demo.thingsboard.io";  // Leave as it is
+
+// MQTT authentication
+const char* mqtt_user = "yourDeviceToken";   // Create a new Device in ThingboardDemo.io and get its access token.
+const char* mqtt_password = "";     // Leave as it is
+
+// DHT configuration
+#define DHTPIN 4 // DHT11 data pin (GPIO4 = D2 on NodeMCU)
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
+
+// MQTT client
+WiFiClient espClient;
+PubSubClient client(espClient);
+
+// MQTT topic configuration
+const char* topic = "v1/devices/me/telemetry";   // Leave as it is
+
+// Functions
+void setup_wifi() {
+  delay(10);
+  Serial.println();
+  Serial.print("Connecting to WiFi: ");
+  Serial.println(ssid);
+
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("");
+  Serial.println("Connected to WiFi!");
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.localIP());
 }
 
-// The loop function runs repeatedly
+void reconnect() {
+  while (!client.connected()) {
+    Serial.print("Connecting to MQTT server...");
+    if (client.connect("NodeMCUClient", mqtt_user, mqtt_password)) { // Authenticated connection
+      Serial.println("Connected!");
+    } else {
+      Serial.print("Failed, error code = ");
+      Serial.print(client.state());
+      Serial.println(". Retrying in 5 seconds...");
+      delay(5000);
+    }
+  }
+}
+
+void setup() {
+  Serial.begin(115200);
+  setup_wifi();
+  client.setServer(mqtt_server, 1883);
+
+  dht.begin();
+}
+
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH); // Turn the LED on (HIGH voltage)
-  delay(1000);                     // Wait for 1 second
-  digitalWrite(LED_BUILTIN, LOW);  // Turn the LED off (LOW voltage)
-  delay(1000);                     // Wait for 1 second
+  if (!client.connected()) {
+    reconnect();
+  }
+  client.loop();
+
+  // Read temperature, humidity, and calculate dew point
+  float temperature = dht.readTemperature();
+  float humidity = dht.readHumidity();
+
+  // Check if the DHT readings are valid
+  if (isnan(temperature) || isnan(humidity)) {
+    Serial.println("Failed to read data from DHT sensor!");
+    return;
+  }
+
+  // Calculate dew point (Magnus-Tetens equation)
+  float a = 17.27;
+  float b = 237.7;
+  float alpha = ((a * temperature) / (b + temperature)) + log(humidity / 100.0);
+  float dewPoint = (b * alpha) / (a - alpha);
+
+  // Prepare data in JSON format
+  String payload = "{\"temperature\":";
+  payload += String(temperature);
+  payload += ",\"humidity\":";
+  payload += String(humidity);
+  payload += ",\"dewPoint\":";
+  payload += String(dewPoint);
+  payload += "}";
+
+  // Publish data via MQTT
+  if (client.publish(topic, payload.c_str())) {
+    Serial.print("Data published: ");
+    Serial.println(payload);
+  } else {
+    Serial.println("Publish failed!");
+  }
+
+  delay(5000); // Publish interval of 5 seconds
 }
 ```
 
-
-
-
-
-
-
 ## Configuration
-In the Arduino code, configure your WiFi and the Thingsboard device.
+Configure the following parameters in the Arduino code according to your project's infrastructure.
 
- > WIFI: Configure the thermostat to connect to the desired WiFi in the **ESP8266-DHT.ino** file. The WiFi must distribute addresses in the **192.168.1.X** range.
-~~~
-const char* ssid     = "yourWiFiSSID";            
-const char* password = "yourWiFiPassword"; 
-~~~
+ > WIFI Setup: Connects the ESP8266 to a WiFi network using your SSID and password. 
+```cpp
+const char* ssid     = "yourWiFiSSID";   // Give your WIFI name           
+const char* password = "yourWiFiPassword"; // Give your WIFI password  
+```
  
-  > THINGSBOARD CONFIGURATION: MQTT broker, topic, and device token.
-~~~
-const char* mqtt_server = "demo.thingsboard.io";
-const char* mqtt_user = "yourDeviceToken";
-const char* mqtt_password = "";
-
-const char* topic = "v1/devices/me/telemetry";
-~~~
+  > MQTT Connection: The device connects to the Thingsboard server using MQTT with authentication (device token as mqtt_user).
+```cpp
+const char* mqtt_server = "demo.thingsboard.io";   // Leave as it is
+const char* mqtt_user = "yourDeviceToken";     // Create a new Device in ThingboardDemo.io and get its access token.
+const char* mqtt_password = "";     // Leave as it is
+```
+```cpp
+const char* topic = "v1/devices/me/telemetry";   // Leave as it is
+```
 
 > CONFIGURE DATA FREQUENCY: Decide how often data will be sent.
-
-~~~
+```cpp
 delay(5000); // Interval of 5 seconds between publications
-~~~
+```
 
 ## Links
  
