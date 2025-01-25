@@ -35,7 +35,7 @@ Additionally, Thingsboard offers a native Android app for viewing dashboards on 
 
 
 
-## Hardware
+## Hardware Resouces
 Electrical scheme and enclosure. 
 <p align="center">
   <img src="/Irudiak/Scheme.png" width="400" height="300">
