@@ -36,15 +36,7 @@ Additionally, Thingsboard offers a native Android app for viewing dashboards on 
 
 
 ## Hardware Resouces
-Electrical scheme and enclosure. 
-<p align="center">
-  <img src="/Irudiak/Scheme.png" width="400" height="300">
-  <img src="/Irudiak/kaxa.jpeg" width="460" height="260">
-</p>
-
-[Enclosure](https://www.thingiverse.com/thing:2510742)
-
-## List of Components
+To build this weather station, the following hardware components are necessary:
 
 |Component| Quantity | Link | 
 |---|---|---|
@@ -53,12 +45,26 @@ Electrical scheme and enclosure.
 | Jumper| 1 |[E-IKA](https://www.e-ika.com/cables-dupont-100cm-h-h-40-uds)|
 
 > Note: A 3D printer is recommended to create the enclosure.
+This hardware setup provides an efficient and reliable foundation for the project.
+> You can find a possible hardware enclosure for this project at the following link:
+[Link to the Hardware Enclosure Project](https://www.thingiverse.com/thing:2510742)
 
 ## NodeMCU V2 Pinout
 Keep in mind that the GPIO numbers of the NodeMCU must be specified in the Arduino code.
 <p align="center">
   <img src="/Irudiak/NodeMCU_Pinout.png" width="800" height="600">
 </p>
+
+## Hardware Resouces
+Electrical scheme and enclosure. 
+<p align="center">
+  <img src="/Irudiak/Scheme.png" width="400" height="300">
+  <img src="/Irudiak/kaxa.jpeg" width="460" height="260">
+</p>
+
+[Enclosure](https://www.thingiverse.com/thing:2510742)
+
+
 
 ## Arduino IDE and Code
 To program the ESP8266 microcontroller, you will need the Arduino IDE and several libraries. Essentially, the **ESP8266-DHT.ino** file must be uploaded to the **NodeMCU** using **Arduino IDE**.
