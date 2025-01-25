@@ -232,19 +232,17 @@ Configure the following parameters in the Arduino code according to your project
 const char* ssid     = "yourWiFiSSID";   // Give your WIFI name           
 const char* password = "yourWiFiPassword"; // Give your WIFI password  
 ```
- 
   > MQTT Connection: The device connects to the Thingsboard server using MQTT with authentication (device token as mqtt_user).
 ```cpp
 const char* mqtt_server = "demo.thingsboard.io";   // Leave as it is
-const char* mqtt_user = "yourDeviceToken";     // Create a new Device in Diy IOT Tknika [Thingsboard](https://demo.thingsboard.io/home)  and get its access token.
+const char* mqtt_user = "yourDeviceToken";     // Create a new Device in https://demo.thingsboard.io and get its access token.
 const char* mqtt_password = "";     // Leave as it is
 ```
-
   > DHT11 and NODEMCU Connection:  Look at the electrical scheme. The DHT11 is connected to D5 (GPIO14)
 ```cpp
 #define DHTPIN 14 // DHT11 data pin (GPI14 = D5 on NodeMCU)
 ```
-
+ > MQTT Topic: Thingsboard API request the topic to be the following).
 ```cpp
 const char* topic = "v1/devices/me/telemetry";   // Leave as it is
 ```
