@@ -3,12 +3,12 @@
 #include <DHT.h>
 
 // WiFi eta MQTT konfigurazioa
-const char* ssid = "Liberia";
-const char* password = "Roberspot";
+const char* ssid = "yourWiFiSSID";
+const char* password = "yourWiFiSSID";
 const char* mqtt_server = "demo.thingsboard.io";
 
 // MQTT autentifikaziorako erabiltzaile-izena eta pasahitza
-const char* mqtt_user = "iq1YN6di6ahT8sYM7JZT";
+const char* mqtt_user = "yourWiFiSSID";
 const char* mqtt_password = "";
 
 // DHT konfigurazioa
