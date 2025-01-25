@@ -23,10 +23,11 @@ This project not only serves as a practical application of IoT (Internet of Thin
 
 We will visualize our weather station using the [Thingsboard DEMO](https://demo.thingsboard.io/) web platform, a powerful IoT solution designed for real-time data visualization, analytics, and device management. It allows us to monitor our environmental data, such as temperature, humidity, and dew point, through an intuitive interface. Thingsboard also supports advanced features such as alert systems and customizable dashboards for better insights.
 
-<p align="center">
-  <img src="/Irudiak/Thingsboard.png" width="400" height="200" style="margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;">
-  <img src="/Irudiak/App.jpg" width="200" height="400" style="display: block; margin-left: auto; margin-right: auto;">
-</p>
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; gap: 50px;">
+  <img src="/Irudiak/Thingsboard.png" style="height: 300px; object-fit: cover;">
+  <img src="/Irudiak/App.jpg" style="height: 300px; object-fit: cover;">
+</div>
+
 
 
 Additionally, Thingsboard offers a native Android app for viewing dashboards on mobile devices, ensuring that users can monitor their data anywhere and anytime. The app is available for download from the Google Play Store [APP](https://play.google.com/store/apps/details?id=org.thingsboard.demo.app).
