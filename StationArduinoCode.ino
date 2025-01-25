@@ -4,7 +4,7 @@
 
 // WiFi eta MQTT konfigurazioa
 const char* ssid = "yourWiFiSSID";
-const char* password = "yourWiFiSSID";
+const char* password = "yourWiFiPassword";
 const char* mqtt_server = "demo.thingsboard.io";
 
 // MQTT autentifikaziorako erabiltzaile-izena eta pasahitza
