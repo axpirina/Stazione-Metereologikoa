@@ -26,50 +26,10 @@ We will visualize our weather station using the [Thingsboard DEMO](https://demo.
 <div align="center">
   <div style="display: flex; justify-content: center; align-items: center; gap: 200px;">
     <img src="/Irudiak/Thingsboard.png" width="600" height="300" style="margin-right: 50px;">
+    <img src="/Irudiak/White.jpg" width="100" height="300" style="margin-right: 50px;">
     <img src="/Irudiak/App.jpg" width="150" height="300" style="margin-left: 50px;">
   </div>
 </div>
-
-
-
-<div align="center">
-  <div style="display: flex; justify-content: center; align-items: center;">
-    <img src="/Irudiak/Thingsboard.png" width="600" height="300" style="margin-right: 100px;">
-    <img src="/Irudiak/App.jpg" width="150" height="300" style="margin-left: 100px;">
-  </div>
-</div>
-
-<div align="center">
-  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1300px;">
-    <img src="/Irudiak/Thingsboard.png" width="600" height="300">
-    <img src="/Irudiak/App.jpg" width="150" height="300">
-  </div>
-</div>
-
-<div align="center">
-  <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
-    <img src="/Irudiak/Thingsboard.png" width="600" height="300" style="margin-right: 200px;">
-    <img src="/Irudiak/App.jpg" width="150" height="300" style="margin-left: 200px;">
-  </div>
-</div>
-
-<div align="center">
-  <div style="display: flex; justify-content: center; align-items: center; padding: 0 100px;">
-    <img src="/Irudiak/Thingsboard.png" width="600" height="300">
-    <img src="/Irudiak/App.jpg" width="150" height="300">
-  </div>
-</div>
-
-<div align="center">
-  <img src="/Irudiak/Thingsboard.png" width="600" height="300" style="display: inline-block; margin-right: 200px;">
-  <img src="/Irudiak/App.jpg" width="150" height="300" style="display: inline-block; margin-left: 200px;">
-</div>
-
-<div align="center">
-  <img src="/Irudiak/Thingsboard.png" width="600" height="300" style="display: block; margin-bottom: 50px;">
-  <img src="/Irudiak/App.jpg" width="150" height="300" style="display: block; margin-top: 50px;">
-</div>
-
 
 Additionally, Thingsboard offers a native Android app for viewing dashboards on mobile devices, ensuring that users can monitor their data anywhere and anytime. The app is available for download from the Google Play Store [APP](https://play.google.com/store/apps/details?id=org.thingsboard.demo.app).
 
