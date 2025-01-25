@@ -49,6 +49,12 @@ This hardware setup provides an efficient and reliable foundation for the projec
 > You can find a possible hardware enclosure for this project at the following link:
 [Link to the Hardware Enclosure Project](https://www.thingiverse.com/thing:2510742)
 
+<p align="center">
+  
+  <img src="/Irudiak/kaxa.jpeg" width="460" height="260">
+</p>
+
+
 ## NodeMCU V2 Pinout
 Keep in mind that the GPIO numbers of the NodeMCU must be specified in the Arduino code.
 <p align="center">
