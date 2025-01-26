@@ -259,10 +259,10 @@ NODE RED eta THINGSBOARD Oteitza Lizeoa [NODE RED and THINGSBOARD Oteitza Lizeoa
 
 Proiektu hau Creative Commons Atxikimendu 4.0 Nazioarteko Lizentziapean dago. 
 You are free to:
-
-   Banatzeko — materiala edozein formato edo komunikabideetan kopiatzeko eta berriro banatzeko.
-   Moldatzeko — materiala berriro nahasteko, bihurtzeko eta oinarrituz egiten den guztia, merkataritzarako ere.
-
+```cpp
+  Banatzeko — materiala edozein formato edo komunikabideetan kopiatzeko eta berriro banatzeko.
+  Moldatzeko — materiala berriro nahasteko, bihurtzeko eta oinarrituz egiten den guztia, merkataritzarako ere.
+```
 
 Berdin-berdin, egilearen egiaztapena ematen baduzu..
 <p align="center"> <a href="https://creativecommons.org/licenses/by/4.0/"> <img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License"> </a> </p>
