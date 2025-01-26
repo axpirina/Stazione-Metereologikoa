@@ -220,46 +220,49 @@ void loop() {
 }
 ```
 
-## Configuration
-Configure the following parameters in the Arduino code according to your project's infrastructure.
+## Konfigurazioa
 
- > WIFI Setup: Connects the ESP8266 to a WiFi network using your SSID and password. 
-```cpp
-const char* ssid     = "yourWiFiSSID";   // Give your WIFI name           
-const char* password = "yourWiFiPassword"; // Give your WIFI password  
-```
-  > MQTT Connection: The device connects to the Thingsboard server using MQTT with authentication (device token as mqtt_user).
-```cpp
-const char* mqtt_server = "demo.thingsboard.io";   // Leave as it is
-const char* mqtt_user = "yourDeviceToken";     // Create a new Device in https://demo.thingsboard.io and get its access token.
-const char* mqtt_password = "";     // Leave as it is
-```
-  > DHT11 and NODEMCU Connection:  Look at the electrical scheme. The DHT11 is connected to D5 (GPIO14)
-```cpp
-#define DHTPIN 14 // DHT11 data pin (GPI14 = D5 on NodeMCU)
-```
- > MQTT Topic: Thingsboard API request the topic to be the following).
-```cpp
-const char* topic = "v1/devices/me/telemetry";   // Leave as it is
-```
+Konfiguratu hurrengo parametroak Arduino kodean, zure proiektuaren azpiegituraren arabera.
 
-> CONFIGURE DATA FREQUENCY: Decide how often data will be sent.
+ > WIFI Konfigurazioa: ESP8266 sare batera konektatzen da zure SSID eta pasahitzarekin.
 ```cpp
-delay(5000); // Interval of 5 seconds between publications
+const char* ssid     = "zureWiFiSSID";   // Zure WIFI izena           
+const char* password = "zureWiFiPasahitza"; // Zure WIFI pasahitza   
+```
+  > MQTT Konexioa: Dispositiboak Thingsboard zerbitzariari konektatzen zaio MQTT bidez autentifikazioarekin (dispositiboaren token-a mqtt_user bezala)
+
+```cpp
+const char* mqtt_server = "demo.thingsboard.io";   // Mantendu berdin
+const char* mqtt_user = "zureDispositiboToken";     // https://demo.thingsboard.io-n dispositibo berri bat sortu eta token-a hartu.
+const char* mqtt_password = "";     // Mantendu berdin
+```
+  > DHT11 eta NODEMCU Konexioa: Elektrikoen eskeman begiratu. DHT11 D5 (GPIO14) eta NodeMCU-ra konektatzen da.
+```cpp
+#define DHTPIN 14 // DHT11 datu pin-a (GPI14 = D5 NodeMCU-n)
+```
+ > MQTT Gaia: Thingsboard API-k gaia honela eskatzen du.
+```cpp
+const char* topic = "v1/devices/me/telemetry";   // Mantendu berdin
 ```
 
-## Links                            
+> KONFIGURATU DATU MAIZTASUNA: Decidatu noiz datuak bidaliko diren.
+```cpp
+delay(5000); // Argitalpenaren tartea, 5 segundo
+```
+
+## Loturak                            
  
 Diy IOT Tknika [Diy IOT Tknika](https://www.youtube.com/watch?v=z61bxGR6Poo&list=PLOYSs5_FlYNtzRIuRgQhgzTNdCzludb6r&index=24)  
-NODE RED and THINGSBOARD Oteitza Lizeoa [NODE RED and THINGSBOARD Oteitza Lizeoa](https://www.youtube.com/playlist?list=PLLzgegoyyqcNHDIyPvh3pWa9Zu6rSWcN-)
+NODE RED eta THINGSBOARD Oteitza Lizeoa [NODE RED and THINGSBOARD Oteitza Lizeoa](https://www.youtube.com/playlist?list=PLLzgegoyyqcNHDIyPvh3pWa9Zu6rSWcN-)
 
-## Lisence
+## Lizentzia
 
-This project is licensed under a Creative Commons Attribution 4.0 International License.
+Proiektu hau Creative Commons Atxikimendu 4.0 Nazioarteko Lizentziapean dago. 
 You are free to:
 
-    Share — copy and redistribute the material in any medium or format.
-    Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+   Banatzeko — materiala edozein formato edo komunikabideetan kopiatzeko eta berriro banatzeko.
+   Moldatzeko — materiala berriro nahasteko, bihurtzeko eta oinarrituz egiten den guztia, merkataritzarako ere.
 
-As long as you provide proper attribution to the original author.
+
+Berdin-berdin, egilearen egiaztapena ematen baduzu..
 <p align="center"> <a href="https://creativecommons.org/licenses/by/4.0/"> <img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License"> </a> </p>
