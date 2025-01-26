@@ -256,3 +256,14 @@ delay(5000); // Interval of 5 seconds between publications
  
 Diy IOT Tknika [Diy IOT Tknika](https://www.youtube.com/watch?v=z61bxGR6Poo&list=PLOYSs5_FlYNtzRIuRgQhgzTNdCzludb6r&index=24)  
 NODE RED and THINGSBOARD Oteitza Lizeoa [NODE RED and THINGSBOARD Oteitza Lizeoa](https://www.youtube.com/playlist?list=PLLzgegoyyqcNHDIyPvh3pWa9Zu6rSWcN-)
+
+## Lisence
+
+This project is licensed under a Creative Commons Attribution 4.0 International License.
+You are free to:
+
+    Share — copy and redistribute the material in any medium or format.
+    Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+
+As long as you provide proper attribution to the original author.
+<p align="center"> <a href="https://creativecommons.org/licenses/by/4.0/"> <img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License"> </a> </p>
