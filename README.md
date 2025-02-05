@@ -78,7 +78,7 @@ Below, you will find the electrical circuit schematic. Make sure to connect ever
 Below, you will find the network circuit schematic. Make sure to connect to your wifi correctly. The network schematic has been created using [Draw.io](https://www.draw.io).
 
 <p align="center">
-  <img src="/Irudiak/Network.png" width="600" height="450">
+  <img src="/Irudiak/Network.png" width="600" height="600">
 </p>
 
 > **Note:** Please ensure that you configure your place Wifi accordinly to your place.
