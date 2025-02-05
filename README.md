@@ -74,6 +74,14 @@ Below, you will find the electrical circuit schematic. Make sure to connect ever
 
 > **Note:** Please ensure that all connections are made correctly and that the voltage polarities are respected.
 
+## Network Scheme 
+Below, you will find the network circuit schematic. Make sure to connect to your wifi correctly. The network schematic has been created using [Draw.io](https://www.draw.io).
+
+<p align="center">
+  <img src="/Irudiak/Scheme.png" width="600" height="450">
+</p>
+
+> **Note:** Please ensure that all connections are made correctly and that the voltage polarities are respected.
 
 ## Arduino IDE
 To program the ESP8266 microcontroller, you will need the Arduino IDE and several libraries. Essentially, the **ESP8266-DHT.ino** file must be uploaded to the **NodeMCU** using **Arduino IDE**. Follow the steps:
