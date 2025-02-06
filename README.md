@@ -45,11 +45,11 @@ To build this weather station, the following hardware components are necessary:
 
 <div align="center">
   <div style="display: flex; justify-content: center; align-items: center; gap: 100px;">
-    <img src="/Irudiak/kaxa.jpeg" width="460" height="260" style="margin-right: 10px;">
-    <img src="/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
-    <img src="/Irudiak/DHT11.png" width="200" height="260" style="margin-right: 10px;">
-    <img src="/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
-    <img src="/Irudiak/Dupont.png" width="200" height="260" style="margin-left: 10px;">
+    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/kaxa.jpeg" width="460" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/DHT11.png" width="200" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Dupont.png" width="200" height="260" style="margin-left: 10px;">
   </div>
 </div>
 
@@ -62,7 +62,7 @@ This hardware setup provides an efficient and reliable foundation for the projec
 ## NodeMCU V2 Pinout
 Keep in mind that the GPIO numbers of the NodeMCU must be specified in the Arduino code.
 <p align="center">
-  <img src="/Irudiak/NodeMCU_Pinout.png" width="800" height="600">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/NodeMCU_Pinout.png" width="800" height="600">
 </p>
 
 ## Electrical Scheme 
@@ -78,7 +78,7 @@ Below, you will find the electrical circuit schematic. Make sure to connect ever
 Below, you will find the network circuit schematic. Make sure to connect to your wifi correctly. The network schematic has been created using [Draw.io](https://www.draw.io).
 
 <p align="center">
-  <img src="/Irudiak/Network.png" width="600" height="600">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Network.png" width="600" height="600">
 </p>
 
 > **Note:** Please ensure that you configure your place Wifi accordinly to your place.
@@ -89,12 +89,12 @@ To program the ESP8266 microcontroller, you will need the Arduino IDE and severa
 1. [Arduino IDE Download](https://www.arduino.cc/en/software)
 
 <p align="center">
-  <img src="/Irudiak/IDE.jpg" width="600" height="450">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/IDE.jpg" width="600" height="450">
 </p>
    
 3. [Installing NodeMCU on Arduino IDE](https://projecthub.arduino.cc/PatelDarshil/getting-started-with-nodemcu-esp8266-on-arduino-ide-b193c3)
 <p align="center">
-  <img src="/Irudiak/Board.png" width="600" height="300">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Board.png" width="600" height="300">
 </p>
 
    
