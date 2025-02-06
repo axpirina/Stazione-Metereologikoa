@@ -1,6 +1,6 @@
 # Weather Station Based on ESP8266  
 <p align="center">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Oteitza.png" width="280" height="800">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Oteitza.png" width="280" height="80">
   <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="100" height="100">
   <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Vincenza.png" width="300" height="100">
 </p>
