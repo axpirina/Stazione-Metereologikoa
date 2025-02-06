@@ -23,13 +23,12 @@ This project not only serves as a practical application of IoT (Internet of Thin
 
 We will visualize our weather station using the [Thingsboard DEMO](https://demo.thingsboard.io/) web platform, a powerful IoT solution designed for real-time data visualization, analytics, and device management. It allows us to monitor our environmental data, such as temperature, humidity, and dew point, through an intuitive interface. Thingsboard also supports advanced features such as alert systems and customizable dashboards for better insights.
 
-<div align="center">
-  <div style="display: flex; justify-content: center; align-items: center; gap: 200px;">
-    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/DEMO.png" width="600" height="300" style="margin-right: 50px;">
-    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="100" height="300" style="margin-right: 50px;">
-    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/App.jpg" width="150" height="300" style="margin-left: 50px;">
-  </div>
-</div>
+<p align="center">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/DEMO.png" width="600" height="300">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.jpg" width="150" height="300">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/App.jpg" width="150" height="300">
+</p>
+
 
 
 Additionally, Thingsboard offers a native Android app for viewing dashboards on mobile devices, ensuring that users can monitor their data anywhere and anytime. The app is available for download from the Google Play Store [APP](https://play.google.com/store/apps/details?id=org.thingsboard.demo.app).
