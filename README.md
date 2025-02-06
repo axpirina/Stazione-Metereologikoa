@@ -68,7 +68,7 @@ Keep in mind that the GPIO numbers of the NodeMCU must be specified in the Ardui
 Below, you will find the electrical circuit schematic. Make sure to connect everything correctly and define the pins you connected in the schematic within the program. The electrical schematic has been created using [Fritzing](https://www.fritzing.com).
 
 <p align="center">
-  <img src="/Irudiak/Scheme.png" width="600" height="450">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Scheme.png" width="600" height="450">
 </p>
 
 > **Note:** Please ensure that all connections are made correctly and that the voltage polarities are respected.
