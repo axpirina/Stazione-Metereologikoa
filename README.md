@@ -25,7 +25,7 @@ We will visualize our weather station using the [Thingsboard DEMO](https://demo.
 
 <p align="center">
   <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/DEMO.png" width="600" height="300">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.jpg" width="150" height="300">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="150" height="300">
   <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/App.jpg" width="150" height="300">
 </p>
 
