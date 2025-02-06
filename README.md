@@ -1,7 +1,7 @@
 # Weather Station Based on ESP8266  
 <p align="center">
   <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Oteitza.png" width="100" height="100">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="500" height="100">
+  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="300" height="100">
   <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Vinceza.jpg" width="100" height="100">
 </p>
 We have developed a weather station based on the **ESP8266** microcontroller, providing an efficient and cost-effective solution for environmental monitoring. This weather station is designed to measure **Temperature (ºC)**, **Humidity (%)** and **Dew Point (ºC)** with the data being displayed on the **Thingsboard DEMO** platform for easy visualization and analysis.  
