@@ -1,13 +1,13 @@
 # Weather Station Based on ESP8266  
 <p align="center">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Oteitza.png" width="280" height="80">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="100" height="100">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Vincenza.png" width="300" height="100">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Oteitza.png" width="280" height="80">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/White.png" width="100" height="100">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Vincenza.png" width="300" height="100">
 </p>
 We have developed a weather station based on the **ESP8266** microcontroller, providing an efficient and cost-effective solution for environmental monitoring. This weather station is designed to measure **Temperature (ºC)**, **Humidity (%)** and **Dew Point (ºC)** with the data being displayed on the **Thingsboard DEMO** platform for easy visualization and analysis.  
 
 <p align="center">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Thingsboard.png" width="800" height="400">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Thingsboard.png" width="800" height="400">
 </p>
 
 View the real-time data on **Thingsboard LIVE Dashboard** by clicking the following [link](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce)
@@ -28,9 +28,9 @@ This project not only serves as a practical application of IoT (Internet of Thin
 We will visualize our weather station using the [Thingsboard DEMO](https://demo.thingsboard.io/) web platform, a powerful IoT solution designed for real-time data visualization, analytics, and device management. It allows us to monitor our environmental data, such as temperature, humidity, and dew point, through an intuitive interface. Thingsboard also supports advanced features such as alert systems and customizable dashboards for better insights.
 
 <p align="center">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/DEMO.png" width="600" height="300">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="150" height="300">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/App.jpg" width="150" height="300">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/DEMO.png" width="600" height="300">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/White.png" width="150" height="300">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/App.jpg" width="150" height="300">
 </p>
 
 
@@ -48,11 +48,11 @@ To build this weather station, the following hardware components are necessary:
 
 <div align="center">
   <div style="display: flex; justify-content: center; align-items: center; gap: 100px;">
-    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/kaxa.jpeg" width="460" height="260" style="margin-right: 10px;">
-    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
-    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/DHT11.png" width="200" height="260" style="margin-right: 10px;">
-    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
-    <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Dupont.png" width="200" height="260" style="margin-left: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/kaxa.jpeg" width="460" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/DHT11.png" width="200" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Dupont.png" width="200" height="260" style="margin-left: 10px;">
   </div>
 </div>
 
@@ -65,14 +65,14 @@ This hardware setup provides an efficient and reliable foundation for the projec
 ## NodeMCU V2 Pinout
 Keep in mind that the GPIO numbers of the NodeMCU must be specified in the Arduino code.
 <p align="center">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/NodeMCU_Pinout.png" width="800" height="600">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/NodeMCU_Pinout.png" width="800" height="600">
 </p>
 
 ## Electrical Scheme 
 Below, you will find the electrical circuit schematic. Make sure to connect everything correctly and define the pins you connected in the schematic within the program. The electrical schematic has been created using [Fritzing](https://www.fritzing.com).
 
 <p align="center">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Scheme.png" width="600" height="450">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Scheme.png" width="600" height="450">
 </p>
 
 > **Note:** Please ensure that all connections are made correctly and that the voltage polarities are respected.
@@ -81,7 +81,7 @@ Below, you will find the electrical circuit schematic. Make sure to connect ever
 Below, you will find the network circuit schematic. Make sure to connect to your wifi correctly. The network schematic has been created using [Draw.io](https://www.draw.io).
 
 <p align="center">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/Network.png" width="600" height="600">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Network.png" width="600" height="600">
 </p>
 
 > **Note:** Please ensure that you configure your place Wifi accordinly to your place.
@@ -92,7 +92,7 @@ To program the ESP8266 microcontroller, you will need the Arduino IDE and severa
 1. [Arduino IDE Download](https://www.arduino.cc/en/software)
 
 <p align="center">
-  <img src="https://axpirina.github.io/Station-Metereologikoa/Irudiak/IDE.jpg" width="600" height="450">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/IDE.jpg" width="600" height="450">
 </p>
    
 3. [Installing NodeMCU on Arduino IDE](https://projecthub.arduino.cc/PatelDarshil/getting-started-with-nodemcu-esp8266-on-arduino-ide-b193c3)
