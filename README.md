@@ -124,42 +124,42 @@ Jarraian emandako **Arduino kodea** igo **NodeMCU**-ra. Denak ondo joan badira, 
  [Arduino kodea](/StationArduinoCode.ino)
 
 ```cpp
-/*ESP8266 Weather Station with Thingsboard Integration. This project demonstrates how to use the **ESP8266** microcontroller to monitor environmental data (temperature, humidity, and dew point)
-and send it to the **Thingsboard** IoT platform via MQTT.
-This code is under a Creative Commons license.
-By Axpi.
+/*ESP8266 Eguraldi Estazioa Thingsboard integrazioarekin
+Proiektu honek erakusten du nola erabili ESP8266 mikroprozesagailua ingurumen-datuak (tenperatura, hezetasuna eta ihar-puntua) monitorizatzeko eta Thingsboard IoT plataformara MQTT bidez bidaltzeko.
+Kode hau Creative Commons lizentziapean dago.
+Egilea: Axpi.
 */
 
-#include <ESP8266WiFi.h> // WiFi library for ESP8266
+#include <ESP8266WiFi.h> // ESP8266 platarako WiFi liburutegia
 #include <PubSubClient.h>
 #include <DHT.h>
 
-// WiFi and MQTT configuration
-const char* ssid = "yourWiFiSSID";    // Give your WIFI name
-const char* password = "yourWiFiPassword";   // Give your WIFI password 
-const char* mqtt_server = "demo.thingsboard.io";  // Leave as it is
+// WiFi eta MQTT konfigurazioa
+const char* ssid = "yourWiFiSSID";
+const char* password = "yourWiFiPassword";
+const char* mqtt_server = "demo.thingsboard.io";
 
-// MQTT authentication
-const char* mqtt_user = "yourDeviceToken";   // Create a new Device in ThingboardDemo.io and get its access token.
-const char* mqtt_password = "";     // Leave as it is
+// MQTT autentifikaziorako erabiltzaile-izena eta pasahitza
+const char* mqtt_user = "yourDeviceToken";
+const char* mqtt_password = "";
 
-// DHT configuration
-#define DHTPIN 2 // DHT11 data pin (GPI14 = D5 on NodeMCU)
+// DHT konfigurazioa
+#define DHTPIN 4 // DHT11 datuen pina (GPIO4 = D2 NodeMCU-n)
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
-// MQTT client
+// MQTT bezeroa
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-// MQTT topic configuration
-const char* topic = "v1/devices/me/telemetry";   // Leave as it is
+// MQTT gaiaren konfigurazioa
+const char* topic = "v1/devices/me/telemetry";
 
-// Functions
+// Funtzioak
 void setup_wifi() {
   delay(10);
   Serial.println();
-  Serial.print("Connecting to WiFi: ");
+  Serial.print("WiFi-sarera konektatzen: ");
   Serial.println(ssid);
 
   WiFi.begin(ssid, password);
@@ -170,20 +170,20 @@ void setup_wifi() {
   }
 
   Serial.println("");
-  Serial.println("Connected to WiFi!");
-  Serial.print("IP Address: ");
+  Serial.println("WiFi-sarera konektatuta!");
+  Serial.print("IP helbidea: ");
   Serial.println(WiFi.localIP());
 }
 
 void reconnect() {
   while (!client.connected()) {
-    Serial.print("Connecting to MQTT server...");
-    if (client.connect("NodeMCUClient", mqtt_user, mqtt_password)) { // Authenticated connection
-      Serial.println("Connected!");
+    Serial.print("MQTT zerbitzarira konektatzen...");
+    if (client.connect("NodeMCUClient", mqtt_user, mqtt_password)) { // Autentifikazioa gehituta
+      Serial.println("Konektatuta!");
     } else {
-      Serial.print("Failed, error code = ");
+      Serial.print("Hutsegitea, kodea = ");
       Serial.print(client.state());
-      Serial.println(". Retrying in 5 seconds...");
+      Serial.println(" Saiatzen berriro 5 segundo barru...");
       delay(5000);
     }
   }
@@ -203,40 +203,39 @@ void loop() {
   }
   client.loop();
 
-  // Read temperature, humidity, and calculate dew point
-  float temperature = dht.readTemperature();
-  float humidity = dht.readHumidity();
+// Tenperatura, hezetasuna eta intza puntua irakurri eta bidali
+float temperature = dht.readTemperature();
+float humidity = dht.readHumidity();
+// DHT irakurketa egiaztatu
+if (isnan(temperature) || isnan(humidity)) {
+  Serial.println("Errorea DHT datuak irakurtzean!");
+  return;
+}
 
-  // Check if the DHT readings are valid
-  if (isnan(temperature) || isnan(humidity)) {
-    Serial.println("Failed to read data from DHT sensor!");
-    return;
-  }
+// Intza puntua kalkulatu (Magnus-Tetens ekuazioa)
+float a = 17.27;
+float b = 237.7;
+float alpha = ((a * temperature) / (b + temperature)) + log(humidity / 100.0);
+float dewPoint = (b * alpha) / (a - alpha);
 
-  // Calculate dew point (Magnus-Tetens equation)
-  float a = 17.27;
-  float b = 237.7;
-  float alpha = ((a * temperature) / (b + temperature)) + log(humidity / 100.0);
-  float dewPoint = (b * alpha) / (a - alpha);
+// JSON formatuan datuak prestatu
+String payload = "{\"temperature\":";
+payload += String(temperature);
+payload += ",\"humidity\":";
+payload += String(humidity);
+payload += ",\"dewPoint\":";
+payload += String(dewPoint);
+payload += "}";
 
-  // Prepare data in JSON format
-  String payload = "{\"temperature\":";
-  payload += String(temperature);
-  payload += ",\"humidity\":";
-  payload += String(humidity);
-  payload += ",\"dewPoint\":";
-  payload += String(dewPoint);
-  payload += "}";
+// MQTT argitalpena
+if (client.publish(topic, payload.c_str())) {
+  Serial.print("Datuak argitaratuta: ");
+  Serial.println(payload);
+} else {
+  Serial.println("Argitalpena huts egin du!");
+}
 
-  // Publish data via MQTT
-  if (client.publish(topic, payload.c_str())) {
-    Serial.print("Data published: ");
-    Serial.println(payload);
-  } else {
-    Serial.println("Publish failed!");
-  }
-
-  delay(5000); // Publish interval of 5 seconds
+  delay(5000); // 5 segundoko tartea argitalpenen artean
 }
 ```
 
