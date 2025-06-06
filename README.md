@@ -4,7 +4,7 @@
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/White.png" width="100" height="100">
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Vincenza.png" width="300" height="100">
 </p>
-We have developed a weather station based on the **ESP8266** microcontroller, providing an efficient and cost-effective solution for environmental monitoring. This weather station is designed to measure **Temperature (ºC)**, **Humidity (%)** and **Dew Point (ºC)** with the data being displayed on the **Thingsboard DEMO** platform for easy visualization and analysis.  
+We have developed a weather station based on the *ESP8266* microcontroller, providing an efficient and cost-effective solution for environmental monitoring. This weather station is designed to measure *Temperature (ºC)*, *Humidity (%)* and *Dew Point (ºC)* with the data being displayed on the *Thingsboard DEMO* platform for easy visualization and analysis.  
 
 <p align="center">
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Thingsboard.png" width="800" height="400">
