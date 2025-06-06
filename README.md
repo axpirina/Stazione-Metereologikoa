@@ -1,6 +1,6 @@
 # Eguraldi Estazioa
 
-**ESP8266** mikrokontroladorean oinarritutako eguraldi estazioa garatu dugu, ingurumenaren monitorizaziorako soluzio eraginkor eta kostu eraginkorra eskaintzen duena. Eguraldi estazio hau **Tenperatura (ºC)**, **Hezetasuna (%)** eta **Roska-puntua (ºC)** neurtzeko diseinatuta dago, eta datuak **Thingsboard DEMO** plataforman erakusten dira, ikuspegi eta analisi errazetarako.
+**ESP8266** mikrokontroladorean oinarritutako eguraldi estazioa garatu dugu, ingurumenaren monitorizaziorako soluzio eraginkor eta kostu eraginkorduna eskaintzen duena. Eguraldi estazio hau **Tenperatura (ºC)**, **Hezetasuna (%)** eta **Intza-puntua (ºC)** neurtzeko diseinatuta dago, eta datuak **Thingsboard DEMO** plataforman erakusten dira, ikuspegi eta analisi errazetarako.
 
 <p align="center">
   <img src="/Irudiak/Thingsboard.png" width="800" height="400">
