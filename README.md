@@ -245,14 +245,14 @@ Parametrizatu honako aldagai hauek Arduino kodean, zure proiektuaren azpiegitura
 
  > **WIFI konfigurazioa**: ESP8266a zure **WiFi** sarearekin konektatzen du, zure **SSID** eta **pasahitza** erabiliz.
 ```cpp
-const char* ssid     = "yourWiFiSSID";   // Give your WIFI name           
-const char* password = "yourWiFiPassword"; // Give your WIFI password  
+const char* ssid     = "yourWiFiSSID";   // Ikastolako WIFIaren izena         
+const char* password = "yourWiFiPassword"; // WIFIaren pasahitza 
 ```
   > **MQTT konfigurazioa**: Gailuak Thingsboard zerbitzariarekin konektatzen da MQTT bidez, autentifikazioarekin (gailuaren tokena mqtt_user gisa erabiliz).
 ```cpp
-const char* mqtt_server = "demo.thingsboard.io";   // Leave as it is
-const char* mqtt_user = "yourDeviceToken";     // Create a new Device in https://demo.thingsboard.io and get its access token.
-const char* mqtt_password = "";     // Leave as it is
+const char* mqtt_server = "demo.thingsboard.io";   // Thingsboard Demoren helbidea
+const char* mqtt_user = "yourDeviceToken";     // Sortu gailu berri bat helbidean: https://demo.thingsboard.io eta lortu haren access token-a.
+const char* mqtt_password = "";     // Hutsa utzi
 ```
   > **DHT11 eta NODEMCU konexioa**:  Begiratu zirkuitu elektrikoari. DHT11a konektatuta dago D5 (GPIO14) pinera.
 ```cpp
@@ -260,12 +260,12 @@ const char* mqtt_password = "";     // Leave as it is
 ```
  > M**QTT Topika**: Thingsboard APIk gai hau izatea eskatzen du (topic hau izan behar da):
 ```cpp
-const char* topic = "v1/devices/me/telemetry";   // Leave as it is
+const char* topic = "v1/devices/me/telemetry";   // Horrela de Thingsboard-en APIa
 ```
 
 > **LAGINKETA MAIZTASUNA**: Erabaki zein maiztasunekin bidaliko diren datuak.
 ```cpp
-delay(5000); // Interval of 5 seconds between publications
+delay(5000); // 5sg tako tartea datuak baidaltzen
 ```
 
 ## Estekak                            
