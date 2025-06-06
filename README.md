@@ -1,42 +1,46 @@
-# Eguraldi Estazioa
-
-**ESP8266** mikrokontroladorean oinarritutako eguraldi estazioa garatu dugu, ingurumenaren monitorizaziorako soluzio eraginkor eta kostu eraginkorduna eskaintzen duena. Eguraldi estazio hau **Tenperatura (ºC)**, **Hezetasuna (%)** eta **Intza-puntua (ºC)** neurtzeko diseinatuta dago, eta datuak **Thingsboard DEMO** plataforman erakusten dira, ikuspegi eta analisi errazetarako.
+# Weather Station Based on ESP8266  
+<p align="center">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Oteitza.png" width="280" height="80">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/White.png" width="100" height="100">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Vincenza.png" width="300" height="100">
+</p>
+We have developed a weather station based on the **ESP8266** microcontroller, providing an efficient and cost-effective solution for environmental monitoring. This weather station is designed to measure **Temperature (ºC)**, **Humidity (%)** and **Dew Point (ºC)** with the data being displayed on the **Thingsboard DEMO** platform for easy visualization and analysis.  
 
 <p align="center">
-  <img src="/Irudiak/Thingsboard.png" width="800" height="400">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Thingsboard.png" width="800" height="400">
 </p>
 
-Ikusi egungo datuak **Thingsboard LIVE Dashboards**-ean, ondorengo [lotura](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce) klik eginez.
+View the real-time data on **Thingsboard LIVE Dashboard** by clicking the following [link](https://demo.thingsboard.io/dashboard/71711470-d8d3-11ef-9dbc-834dadad7dd9?publicId=3cd10c30-53e6-11ed-a339-0708081d40ce)
 
-Sistemak ere **alarma bat martxan jartzeko** aukera du, hezetasun-mailak zein maila zehatz bat gainditzen duenean, ingurumen aldaketa kritikoetan alerta emateko. Ezaugarri hau bereziki erabilgarria da nekazaritza bezalako egoeretan, non hezetasun optimoa mantentzea funtsezkoa den, edo barruko inguruneetan, non airearen kalitatea kontrolatzea garrantzitsua den.
+The system also includes a feature to **trigger an alarm** when the humidity level surpasses a specific threshold, ensuring real-time awareness of critical environmental changes. This capability is especially useful in scenarios like agriculture, where maintaining optimal humidity is crucial, or in indoor environments where air quality monitoring is a priority.  
 
-# Edukiak
+# Contents 
 
-Proiektu honek ez bakarrik IoT (Internet of Things) printzipioen aplikazio praktiko gisa balio du, baita ikasle eta zaletuentzako plataforma hezigarria ere:
+This project not only serves as a practical application of IoT (Internet of Things) principles but also offers an educational platform for students and enthusiasts to explore:  
+- **Sensor integration:** Learn how to interface temperature and humidity sensors with the **ESP8266**.  
+- **Data communication:** Understand the **MQTT** protocol used to send sensor data to the cloud.  
+- **Platform interaction:** Explore how **Thingsboard** visualizes real-time data and allows for advanced analytics.  
+- **Alarm systems:** Implement threshold-based alerts for improved responsiveness to environmental changes.  
 
-- **Sentsoreen integrazioa:** Ikasi **ESP8266**-rekin tenperatura eta hezetasun sentsoreak nola konektatu.
-- **Datuen komunikazioa:** Ulertu **MQTT** protokoloa, sentsoreen datuak hodeira bidaltzeko.
-- **Plataformaren interakzioa:** Ikusi nola **Thingsboard**-ek datuak benetan bistaratzen dituen eta aurreratutako analisiak eskaintzen dituen.
-- **Alarma sistemak:** Implementatu muga batzuetan oinarritutako alertak, ingurumen aldaketa berriak modu azkarragoan kudeatzeko.
 
-## WEB Baliabideak
+## WEB Resources
 
-Eguraldi estazioa **Thingsboard DEMO** plataformaren bidez bistaratuko dugu, hodeiko datuen bistaratze, analisi eta gailuen kudeaketarako IoT soluzio indartsu bat. Ingurumen datuak, hala nola tenperatura, hezetasuna eta roska-puntua, interfazea intuitibo baten bidez kontrolatzeko aukera ematen digu. Thingsboard-ek aurreratutako ezaugarriak ere eskaintzen ditu, hala nola alerta sistemak eta egokitutako dashboard-ak ikuspuntu hobeak lortzeko.
+We will visualize our weather station using the [Thingsboard DEMO](https://demo.thingsboard.io/) web platform, a powerful IoT solution designed for real-time data visualization, analytics, and device management. It allows us to monitor our environmental data, such as temperature, humidity, and dew point, through an intuitive interface. Thingsboard also supports advanced features such as alert systems and customizable dashboards for better insights.
 
-<div align="center">
-  <div style="display: flex; justify-content: center; align-items: center; gap: 200px;">
-    <img src="/Irudiak/DEMO.png" width="600" height="300" style="margin-right: 50px;">
-    <img src="/Irudiak/White.png" width="100" height="300" style="margin-right: 50px;">
-    <img src="/Irudiak/App.jpg" width="150" height="300" style="margin-left: 50px;">
-  </div>
-</div>
+<p align="center">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/DEMO.png" width="600" height="300">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/White.png" width="150" height="300">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/App.jpg" width="150" height="300">
+</p>
 
-Gainera, Thingsboard-ek Android aplikazio bat eskaintzen du, dashboard-ak mugikorrean bistaratzen dituztenak, erabiltzaileek euren datuak edonon eta noiznahi monitoriza ditzaten. Aplikazioa Google Play Store-n deskargatzeko aukera dago: [APP](https://play.google.com/store/apps/details?id=org.thingsboard.demo.app).
 
-## Hardware Baliabideak
-Eguraldi estazio hau eraikitzeko, honako hardware osagaiak beharrezkoak dira:
 
-|Osagaia| Kantitatea | Lotura | Modelo|
+Additionally, Thingsboard offers a native Android app for viewing dashboards on mobile devices, ensuring that users can monitor their data anywhere and anytime. The app is available for download from the Google Play Store [APP](https://play.google.com/store/apps/details?id=org.thingsboard.demo.app).
+
+## Hardware Resouces
+To build this weather station, the following hardware components are necessary:
+
+|Component| Quantity | Link | Model|
 |---|---|---|---|
 | NodeMCU V2| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/placas-de-desarrollo/37815-placa-de-desarrollo-nodemcu-v2-lua-esp8266.html)|Amica|
 | DHT11| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/sensores/38012-sensor-de-temperatura-y-humedad-digital-dht11-para-arduino.html)|Tº & Hº|
@@ -44,102 +48,113 @@ Eguraldi estazio hau eraikitzeko, honako hardware osagaiak beharrezkoak dira:
 
 <div align="center">
   <div style="display: flex; justify-content: center; align-items: center; gap: 100px;">
-    <img src="/Irudiak/kaxa.jpeg" width="460" height="260" style="margin-right: 10px;">
-    <img src="/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
-    <img src="/Irudiak/DHT11.png" width="200" height="260" style="margin-right: 10px;">
-    <img src="/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
-    <img src="/Irudiak/Dupont.png" width="200" height="260" style="margin-left: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/kaxa.jpeg" width="460" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/DHT11.png" width="200" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/White.png" width="10" height="260" style="margin-right: 10px;">
+    <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Dupont.png" width="200" height="260" style="margin-left: 10px;">
   </div>
 </div>
 
-> **Oharrak:** 3D inprimagailu bat gomendatzen da kasuaren etxebizitza sortzeko.
-Hardware konfigurazio hau proiektuaren oinarrizko eta fidagarria da.
-> Hardware etxebizitza proiektu honetarako aurkitu dezakezu hurrengo loturan:
-[Hardware Etxebizitza Proiekturako Lotura](https://www.thingiverse.com/thing:2510742)
+> **Note:** A 3D printer is recommended to create the enclosure.
+This hardware setup provides an efficient and reliable foundation for the project.
+> You can find a possible hardware enclosure for this project at the following link:
+[Link to the Hardware Enclosure Project](https://www.thingiverse.com/thing:2510742) - 
+[Another link to the Hardware Enclosure Project](https://www.thingiverse.com/thing:4864299)
 
 ## NodeMCU V2 Pinout
-Kontuan izan NodeMCU-ren GPIO zenbakiak zehaztu behar direla Arduino kodean.
-
+Keep in mind that the GPIO numbers of the NodeMCU must be specified in the Arduino code.
 <p align="center">
-  <img src="/Irudiak/NodeMCU_Pinout.png" width="800" height="600">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/NodeMCU_Pinout.png" width="800" height="600">
 </p>
 
-## Eskema Elektrikoa
-Behean, elektrikoen zirkuituaren eskema aurkituko duzu. Ziurtatu guztiak ondo konektatzen dituzula eta zirkuituari konektatutako pinak definitzen dituzula programan. Eskema elektrikoa **Fritzing**-en erabiliz sortu da.
+## Electrical Scheme 
+Below, you will find the electrical circuit schematic. Make sure to connect everything correctly and define the pins you connected in the schematic within the program. The electrical schematic has been created using [Fritzing](https://www.fritzing.com).
 
 <p align="center">
-  <img src="/Irudiak/Scheme.png" width="600" height="450">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Scheme.png" width="600" height="450">
 </p>
 
-> **Oharrak:** Konektatzen dituzun guztiak ondo konektatzen direla eta tentsioaren polaritateak errespetatzen direla ziurtatu.
+> **Note:** Please ensure that all connections are made correctly and that the voltage polarities are respected.
+
+## Network Scheme 
+Below, you will find the network circuit schematic. Make sure to connect to your wifi correctly. The network schematic has been created using [Draw.io](https://www.draw.io).
+
+<p align="center">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Network.png" width="600" height="600">
+</p>
+
+> **Note:** Please ensure that you configure your place Wifi accordinly to your place.
 
 ## Arduino IDE
-ESP8266 mikrokontroladorea programatzeko, Arduino IDE eta hainbat liburutegi beharrezkoak dira. Funtsean, **ESP8266-DHT.ino** fitxategia **NodeMCU**-ra igo behar da **Arduino IDE**-ren bidez. Jarraitu pauso hauek:
+To program the ESP8266 microcontroller, you will need the Arduino IDE and several libraries. Essentially, the **ESP8266-DHT.ino** file must be uploaded to the **NodeMCU** using **Arduino IDE**. Follow the steps:
 
-1. [Arduino IDE Deskargatu](https://www.arduino.cc/en/software)
+1. [Arduino IDE Download](https://www.arduino.cc/en/software)
 
 <p align="center">
-  <img src="/Irudiak/IDE.jpg" width="600" height="450">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/IDE.jpg" width="600" height="450">
 </p>
-
-3. [NodeMCU Arduino IDE-n Instalatu](https://projecthub.arduino.cc/PatelDarshil/getting-started-with-nodemcu-esp8266-on-arduino-ide-b193c3)
+   
+3. [Installing NodeMCU on Arduino IDE](https://projecthub.arduino.cc/PatelDarshil/getting-started-with-nodemcu-esp8266-on-arduino-ide-b193c3)
 <p align="center">
-  <img src="/Irudiak/Board.png" width="600" height="300">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Board.png" width="600" height="300">
 </p>
 
-5. Hona hemen beharrezko liburutegiak Arduino IDE-n instalatzeko. Hori egiteko, ireki Library Manager-a **Sketch** > **Include Library** > **Manage Libraries** bidez.
+   
+5. Install the following libraries in the Arduino IDE. To do this, open the Library Manager by navigating to **Sketch** > **Include Library** > **Manage Libraries**.
    - ESP8266WiFi.h
    - PubSubClient.h
    - DHT.h
 
-  Era berean, 2025etik aurrera, ondorengo liburutegi konpilatuak nahikoa direla frogatu da:
+    Additionally, as of 2025, the following compiled libraries have been found sufficient:
 
-  - SimpleWifiClient Toemblom-en eskutik
-  - IoTtweet Isaranu-ren eskutik
-  - DHT Sensor Library Adafruit-ekoa
-  - PubSubClient Nick O'Leary-ren eskutik
+     - SimpleWifiClient by Toemblom
+     - IoTtweet by Isaranu
+     - DHT Sensor Library by Adafruit
+     - PubSubClient by Nick O`Leary
 
-## Arduino Kodea
-Kode hau NodeMCU-ra igo dezakezu. Denak ondo joan bada, kodearen parametroak konfiguratzeko atala aurkituko duzu aurrerago.
- [Eguraldi Estazioko Arduino Kodea](/StationArduinoCode.ino)
+
+## Arduino Code
+Upload the Arduino code provide below to the NodeMCU. If everything has gone well, you will find the section for parameterizing the code further ahead.
+ [Arduino Code for the Weather Station](/StationArduinoCode.ino)
 
 ```cpp
-/*ESP8266 Eguraldi Estazioa Thingsboard Integratuekin. Proiektu honek **ESP8266** mikrokontroladorea erabiltzen du ingurumeneko datuak (tenperatura, hezetasuna, eta roska-puntua) monitorizatzeko
-eta **Thingsboard** IoT plataformara MQTT bidez bidaltzeko.
-Kode hau Creative Commons lizentziapean dago.
-Axpi-ren eskutik.
+/*ESP8266 Weather Station with Thingsboard Integration. This project demonstrates how to use the **ESP8266** microcontroller to monitor environmental data (temperature, humidity, and dew point)
+and send it to the **Thingsboard** IoT platform via MQTT.
+This code is under a Creative Commons license.
+By Axpi.
 */
 
-#include <ESP8266WiFi.h> // WiFi liburutegia ESP8266-rentzat
+#include <ESP8266WiFi.h> // WiFi library for ESP8266
 #include <PubSubClient.h>
 #include <DHT.h>
 
-// WiFi eta MQTT konfigurazioa
-const char* ssid = "zureWiFiSSID";    // Zure WIFI izena jarri
-const char* password = "zureWiFiPasahitza";   // Zure WIFI pasahitza jarri 
-const char* mqtt_server = "demo.thingsboard.io";  // Mantendu berdin
+// WiFi and MQTT configuration
+const char* ssid = "yourWiFiSSID";    // Give your WIFI name
+const char* password = "yourWiFiPassword";   // Give your WIFI password 
+const char* mqtt_server = "demo.thingsboard.io";  // Leave as it is
 
-// MQTT autentifikazioa
-const char* mqtt_user = "zureDispositiboToken";   // ThingsboardDemo.io-n gailu berri bat sortu eta haren sarbide-tokens hartu.
-const char* mqtt_password = "";     // Mantendu berdin
+// MQTT authentication
+const char* mqtt_user = "yourDeviceToken";   // Create a new Device in ThingboardDemo.io and get its access token.
+const char* mqtt_password = "";     // Leave as it is
 
-// DHT konfigurazioa
-#define DHTPIN 2 // DHT11 datu pin-a (GPI14 = D5 NodeMCU-n)
+// DHT configuration
+#define DHTPIN 2 // DHT11 data pin (GPI14 = D5 on NodeMCU)
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
-// MQTT bezeroa
+// MQTT client
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-// MQTT gaia konfigurazioa
-const char* topic = "v1/devices/me/telemetry";   // Mantendu berdin
+// MQTT topic configuration
+const char* topic = "v1/devices/me/telemetry";   // Leave as it is
 
-// Funtzioak
+// Functions
 void setup_wifi() {
   delay(10);
   Serial.println();
-  Serial.print("WiFi-ra konektatzen: ");
+  Serial.print("Connecting to WiFi: ");
   Serial.println(ssid);
 
   WiFi.begin(ssid, password);
@@ -150,20 +165,20 @@ void setup_wifi() {
   }
 
   Serial.println("");
-  Serial.println("WiFi-ra konektatuta!");
-  Serial.print("IP helbidea: ");
+  Serial.println("Connected to WiFi!");
+  Serial.print("IP Address: ");
   Serial.println(WiFi.localIP());
 }
 
 void reconnect() {
   while (!client.connected()) {
-    Serial.print("MQTT zerbitzariari konektatzen...");
-    if (client.connect("NodeMCUClient", mqtt_user, mqtt_password)) { // Autentifikatutako konexioa
-      Serial.println("Konektatuta!");
+    Serial.print("Connecting to MQTT server...");
+    if (client.connect("NodeMCUClient", mqtt_user, mqtt_password)) { // Authenticated connection
+      Serial.println("Connected!");
     } else {
-      Serial.print("Ezin konektatu, errore kodea = ");
+      Serial.print("Failed, error code = ");
       Serial.print(client.state());
-      Serial.println(". 5 segundoan berriro saiatuko...");
+      Serial.println(". Retrying in 5 seconds...");
       delay(5000);
     }
   }
@@ -183,23 +198,23 @@ void loop() {
   }
   client.loop();
 
-  // Tenperatura eta hezetasuna irakurri, roska-puntua kalkulatu
+  // Read temperature, humidity, and calculate dew point
   float temperature = dht.readTemperature();
   float humidity = dht.readHumidity();
 
-  // DHT irakurketa baliodunak diren egiaztatu
+  // Check if the DHT readings are valid
   if (isnan(temperature) || isnan(humidity)) {
-    Serial.println("DHT sentsorearen datuak irakurtzeko huts egin da!");
+    Serial.println("Failed to read data from DHT sensor!");
     return;
   }
 
-  // Roska-puntua kalkulatu (Magnus-Tetens ekuazioa)
+  // Calculate dew point (Magnus-Tetens equation)
   float a = 17.27;
   float b = 237.7;
   float alpha = ((a * temperature) / (b + temperature)) + log(humidity / 100.0);
   float dewPoint = (b * alpha) / (a - alpha);
 
-  // JSON formatuan datuak prestatu
+  // Prepare data in JSON format
   String payload = "{\"temperature\":";
   payload += String(temperature);
   payload += ",\"humidity\":";
@@ -208,61 +223,59 @@ void loop() {
   payload += String(dewPoint);
   payload += "}";
 
-  // Datuak MQTT bidez argitaratu
+  // Publish data via MQTT
   if (client.publish(topic, payload.c_str())) {
-    Serial.print("Datuak argitaratuta: ");
+    Serial.print("Data published: ");
     Serial.println(payload);
   } else {
-    Serial.println("Argitalpena huts egin da!");
+    Serial.println("Publish failed!");
   }
 
-  delay(5000); // Argitalpenaren tartea, 5 segundo
+  delay(5000); // Publish interval of 5 seconds
 }
 ```
 
-## Konfigurazioa
+## Configuration
+Configure the following parameters in the Arduino code according to your project's infrastructure.
 
-Konfiguratu hurrengo parametroak Arduino kodean, zure proiektuaren azpiegituraren arabera.
-
- > WIFI Konfigurazioa: ESP8266 sare batera konektatzen da zure SSID eta pasahitzarekin.
+ > WIFI Setup: Connects the ESP8266 to a WiFi network using your SSID and password. 
 ```cpp
-const char* ssid     = "zureWiFiSSID";   // Zure WIFI izena           
-const char* password = "zureWiFiPasahitza"; // Zure WIFI pasahitza   
+const char* ssid     = "yourWiFiSSID";   // Give your WIFI name           
+const char* password = "yourWiFiPassword"; // Give your WIFI password  
 ```
-  > MQTT Konexioa: Dispositiboak Thingsboard zerbitzariari konektatzen zaio MQTT bidez autentifikazioarekin (dispositiboaren token-a mqtt_user bezala)
-
+  > MQTT Connection: The device connects to the Thingsboard server using MQTT with authentication (device token as mqtt_user).
 ```cpp
-const char* mqtt_server = "demo.thingsboard.io";   // Mantendu berdin
-const char* mqtt_user = "zureDispositiboToken";     // https://demo.thingsboard.io-n dispositibo berri bat sortu eta token-a hartu.
-const char* mqtt_password = "";     // Mantendu berdin
+const char* mqtt_server = "demo.thingsboard.io";   // Leave as it is
+const char* mqtt_user = "yourDeviceToken";     // Create a new Device in https://demo.thingsboard.io and get its access token.
+const char* mqtt_password = "";     // Leave as it is
 ```
-  > DHT11 eta NODEMCU Konexioa: Elektrikoen eskeman begiratu. DHT11 D5 (GPIO14) eta NodeMCU-ra konektatzen da.
+  > DHT11 and NODEMCU Connection:  Look at the electrical scheme. The DHT11 is connected to D5 (GPIO14)
 ```cpp
-#define DHTPIN 14 // DHT11 datu pin-a (GPI14 = D5 NodeMCU-n)
+#define DHTPIN 14 // DHT11 data pin (GPI14 = D5 on NodeMCU)
 ```
- > MQTT Gaia: Thingsboard API-k gaia honela eskatzen du.
+ > MQTT Topic: Thingsboard API request the topic to be the following).
 ```cpp
-const char* topic = "v1/devices/me/telemetry";   // Mantendu berdin
+const char* topic = "v1/devices/me/telemetry";   // Leave as it is
 ```
 
-> KONFIGURATU DATU MAIZTASUNA: Decidatu noiz datuak bidaliko diren.
+> CONFIGURE DATA FREQUENCY: Decide how often data will be sent.
 ```cpp
-delay(5000); // Argitalpenaren tartea, 5 segundo
+delay(5000); // Interval of 5 seconds between publications
 ```
 
-## Loturak                            
+## Links                            
  
 Diy IOT Tknika [Diy IOT Tknika](https://www.youtube.com/watch?v=z61bxGR6Poo&list=PLOYSs5_FlYNtzRIuRgQhgzTNdCzludb6r&index=24)  
-NODE RED eta THINGSBOARD Oteitza Lizeoa [NODE RED and THINGSBOARD Oteitza Lizeoa](https://www.youtube.com/playlist?list=PLLzgegoyyqcNHDIyPvh3pWa9Zu6rSWcN-)
+NODE RED and THINGSBOARD Oteitza Lizeoa [NODE RED and THINGSBOARD Oteitza Lizeoa](https://www.youtube.com/playlist?list=PLLzgegoyyqcNHDIyPvh3pWa9Zu6rSWcN-)
 
-## Lizentzia
+## License
 
-Proiektu hau Creative Commons Atxikimendu 4.0 Nazioarteko Lizentziapean dago. 
+This project is licensed under a Creative Commons Attribution 4.0 International License.
 You are free to:
-```cpp
-  Banatzeko — materiala edozein formato edo komunikabideetan kopiatzeko eta berriro banatzeko.
-  Moldatzeko — materiala berriro nahasteko, bihurtzeko eta oinarrituz egiten den guztia, merkataritzarako ere.
-```
 
-Berdin-berdin, egilearen egiaztapena ematen baduzu..
+    Share — copy and redistribute the material in any medium or format.
+    Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+
+As long as you provide proper attribution to the original author.
 <p align="center"> <a href="https://creativecommons.org/licenses/by/4.0/"> <img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License"> </a> </p>
+
