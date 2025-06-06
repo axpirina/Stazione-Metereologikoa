@@ -27,7 +27,7 @@ Proiektu honek IoT (Internet of Things) inguruneak lantzeaz gain ikaskuntza plat
 
 ## WEB Resources
 
-Gure estazio metereologikoa [Thingsboard DEMO](https://demo.thingsboard.io/) web plataforma erabiliaz garatuko dugu. Thingsboard denbora errealeko datuen bistaratzea, analisia eta gailuen kudeaketa ahalbidetzen dituen IoT irtenbide indartsua da. Ingurumen-datuak, hala nola tenperatura, hezetasuna eta ihar-puntua, interfaze intuitibo baten bidez kontrolatzeko aukera ematen digu. Gainera, Thingsboard-ek funtzionalitate aurreratuak eskaintzen ditu, alarma-sistemak eta norabide pertsonalizagarriak barne, informazio sakonagoa lortzeko.
+Gure estazio metereologikoa [Thingsboard DEMO](https://demo.thingsboard.io/) web plataforma erabiliaz garatuko dugu. **Thingsboard** denbora errealeko datuen bistaratzea, analisia eta gailuen kudeaketa ahalbidetzen dituen IoT irtenbide indartsua da. Ingurumen-datuak, hala nola **tenperatura**, **hezetasuna** eta **ihar-puntua**, interfaze intuitibo baten bidez kontrolatzeko aukera ematen digu. Gainera, Thingsboard-ek funtzionalitate aurreratuak eskaintzen ditu, **alarma-sistemak** eta norabide pertsonalizagarriak barne, informazio sakonagoa lortzeko.
 
 <p align="center">
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/DEMO.png" width="600" height="300">
