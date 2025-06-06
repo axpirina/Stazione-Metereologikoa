@@ -265,7 +265,7 @@ const char* topic = "v1/devices/me/telemetry";   // Horrela de Thingsboard-en AP
 
 > **LAGINKETA MAIZTASUNA**: Erabaki zein maiztasunekin bidaliko diren datuak.
 ```cpp
-delay(5000); // 5sg tako tartea datuak baidaltzen
+delay(5000); // 5sg tako tartea datuak bidaltzen
 ```
 
 ## Estekak                            
@@ -275,12 +275,12 @@ NODE RED and THINGSBOARD Oteitza Lizeoa [NODE RED and THINGSBOARD Oteitza Lizeoa
 
 ## License
 
-This project is licensed under a Creative Commons Attribution 4.0 International License.
-You are free to:
+Proiektu hau Creative Commons Attribution 4.0 International License lizentziapean dago.
+Aske zara:
 
-    Share — copy and redistribute the material in any medium or format.
-    Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+    Banatzeko —  kopiatu eta berriz banatu dezakezu edozein medio edo formatuan.
+    Aldatzeko —  garatu, eraldatu eta oinarri hartuta proiektu berriak sortu ditzakezu edozein helburutarako, baita merkataritzarako ere.
 
-As long as you provide proper attribution to the original author.
+Jatorrizko egileari egokia den aipamena ematen badiozu.
 <p align="center"> <a href="https://creativecommons.org/licenses/by/4.0/"> <img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License"> </a> </p>
 
