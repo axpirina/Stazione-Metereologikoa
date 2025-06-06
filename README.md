@@ -100,7 +100,7 @@ Behean aurkituko duzu sare-zirkuituaren eskema. Ziurtatu zure **WiFi**-ra zuzene
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/IDE.jpg" width="600" height="450">
 </p>
    
-3. [NodeMCUa instalatu Arduino IDEan](https://projecthub.arduino.cc/PatelDarshil/getting-started-with-nodemcu-esp8266-on-arduino-ide-b193c3)
+3. [NodeMCUa instalatu Arduino IDEan](https://programarfacil.com/esp8266/como-programar-nodemcu-ide-arduino/)
 <p align="center">
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Board.png" width="600" height="300">
 </p>
