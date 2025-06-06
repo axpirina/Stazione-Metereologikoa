@@ -46,8 +46,8 @@ Eguraldi-estazio hau eraikitzeko, ondorengo hardware osagaiak behar dira:
 |Elementuak| kantitatea | Esteka | Modeloa|
 |---|---|---|---|
 | NodeMCU V2| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/placas-de-desarrollo/37815-placa-de-desarrollo-nodemcu-v2-lua-esp8266.html)|Amica|
-| DHT11| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/sensores/38012-sensor-de-temperatura-y-humedad-digital-dht11-para-arduino.html)|Tº & Hº|
-| Jumper Dupont| 1 |[E-IKA](https://www.e-ika.com/cables-dupont-100cm-h-h-40-uds)|Female-Female|
+| DHT11| 1 |[Electroson](https://www.electrosonsansebastian.com/eu/sensores/38012-sensor-de-temperatura-y-humedad-digital-dht11-para-arduino.html)|Tº eta Hº|
+| Jumper Dupont| 1 |[E-IKA](https://www.e-ika.com/cables-dupont-100cm-h-h-40-uds)|Emea-Emea|
 
 <div align="center">
   <div style="display: flex; justify-content: center; align-items: center; gap: 100px;">
@@ -83,16 +83,16 @@ Zirkuitu elektrikoaren eskema hau [Fritzing](https://www.fritzing.com). erabiliz
 > **Oharra:** Mesedez, ziurtatu konekzio guztiak ondo egin direla eta tentsioaren polaritateak errespetatu direla.
 
 ## Sare eskema
-Behean aurkituko duzu sare-zirkuituaren eskema. Ziurtatu zure WiFi-ra zuzenean konektatzen zarala. Sare-zirkuituaren eskema hau  [Draw.io](https://www.draw.io). erabiliaz sortu da
+Behean aurkituko duzu sare-zirkuituaren eskema. Ziurtatu zure **WiFi**-ra zuzenean konektatzen zarala. Sare-zirkuituaren eskema hau  [Draw.io](https://www.draw.io). erabiliaz sortu da
 
 <p align="center">
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Network.png" width="600" height="600">
 </p>
 
-> **Oharra:** Mesedez, ziurtatu zure lekuaren arabera zure WiFi sarearen konfigurazioa egokia dela.
+> **Oharra:** Mesedez, ziurtatu zure lekuaren arabera zure **WiFi** sarearen konfigurazioa egokia dela.
 
 ## Arduino IDEa
-ESP8266 mikroprozesagailua programatzeko, Arduino IDE eta hainbat liburutegi beharko dituzu. Orokorrean, ESP8266-DHT.ino fitxategia NodeMCU-ra igo behar da Arduino IDE erabiliz. Jarraitu hurrengo pausoak:
+**ESP8266** mikroprozesagailua programatzeko, **Arduino IDE** eta hainbat liburutegi beharko dituzu. Orokorrean, **ESP8266-DHT.ino** fitxategia **NodeMCU**-ra igo behar da Arduino IDE erabiliz. Jarraitu hurrengo pausoak:
 
 1. [Arduino IDE jaitsi](https://www.arduino.cc/en/software)
 
@@ -106,7 +106,7 @@ ESP8266 mikroprozesagailua programatzeko, Arduino IDE eta hainbat liburutegi beh
 </p>
 
    
-5. Ondorengo liburutegiak Arduino IDEan instalatu. Horretarako, ireki Library Manager hau egiten: jo Sketch > Include Library > Manage Libraries.
+5. Ondorengo liburutegiak **Arduino IDE**an instalatu. Horretarako, ireki **Library Manager** hau egiten: jo **Sketch** > **Include Library** > **Manage Libraries**.
    - ESP8266WiFi.h
    - PubSubClient.h
    - DHT.h
@@ -120,7 +120,7 @@ ESP8266 mikroprozesagailua programatzeko, Arduino IDE eta hainbat liburutegi beh
 
 
 ## Arduino Kodea
-Jarraian emandako Arduino kodea igo NodeMCU-ra. Denak ondo joan badira, aurrerago kodea gehiago parametrizatzeko atala aurkituko duzu.
+Jarraian emandako **Arduino kodea** igo **NodeMCU**-ra. Denak ondo joan badira, aurrerago kodea gehiago parametrizatzeko atala aurkituko duzu.
  [Arduino kodea](/StationArduinoCode.ino)
 
 ```cpp
@@ -243,27 +243,27 @@ void loop() {
 ## Konfigurazioa
 Parametrizatu honako aldagai hauek Arduino kodean, zure proiektuaren azpiegituraren arabera.
 
- > WIFI konfigurazioa: ESP8266a zure WiFi sarearekin konektatzen du, zure SSID eta pasahitza erabiliz.
+ > **WIFI konfigurazioa**: ESP8266a zure **WiFi** sarearekin konektatzen du, zure **SSID** eta **pasahitza** erabiliz.
 ```cpp
 const char* ssid     = "yourWiFiSSID";   // Give your WIFI name           
 const char* password = "yourWiFiPassword"; // Give your WIFI password  
 ```
-  > MQTT konfigurazioa: Gailuak Thingsboard zerbitzariarekin konektatzen da MQTT bidez, autentifikazioarekin (gailuaren tokena mqtt_user gisa erabiliz).
+  > **MQTT konfigurazioa**: Gailuak Thingsboard zerbitzariarekin konektatzen da MQTT bidez, autentifikazioarekin (gailuaren tokena mqtt_user gisa erabiliz).
 ```cpp
 const char* mqtt_server = "demo.thingsboard.io";   // Leave as it is
 const char* mqtt_user = "yourDeviceToken";     // Create a new Device in https://demo.thingsboard.io and get its access token.
 const char* mqtt_password = "";     // Leave as it is
 ```
-  > DHT11 eta NODEMCU konexioa:  Begiratu zirkuitu elektrikoari. DHT11a konektatuta dago D5 (GPIO14) pinera.
+  > **DHT11 eta NODEMCU konexioa**:  Begiratu zirkuitu elektrikoari. DHT11a konektatuta dago D5 (GPIO14) pinera.
 ```cpp
 #define DHTPIN 14 // DHT11 data pin (GPI14 = D5 on NodeMCU)
 ```
- > MQTT Topika: Thingsboard APIk gai hau izatea eskatzen du (topic hau izan behar da):
+ > M**QTT Topika**: Thingsboard APIk gai hau izatea eskatzen du (topic hau izan behar da):
 ```cpp
 const char* topic = "v1/devices/me/telemetry";   // Leave as it is
 ```
 
-> LAGINKETA MAIZTASUNA: Erabaki zein maiztasunekin bidaliko diren datuak.
+> **LAGINKETA MAIZTASUNA**: Erabaki zein maiztasunekin bidaliko diren datuak.
 ```cpp
 delay(5000); // Interval of 5 seconds between publications
 ```
