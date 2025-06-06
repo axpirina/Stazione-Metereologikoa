@@ -7,6 +7,7 @@
 
 **ESP8266** mikroprozesagailuan oinarritutako eguraldi-estazio bat garatu dugu, ingurumenaren jarraipena egiteko irtenbide eraginkor eta merke bat eskainiz. Estazio honek tenperatura (ºC), hezetasuna (%) eta ihar-puntua (ºC) neurtzen ditu, eta datuak Thingsboard DEMO plataforman bistaratzen dira, modu errazean ikusi eta aztertzeko aukera emanez.  
 
+
 <p align="center">
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Thingsboard.png" width="800" height="400">
 </p>
