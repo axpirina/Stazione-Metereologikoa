@@ -5,7 +5,7 @@
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Vincenza.png" width="300" height="100">
 </p>
 
-**ESP8266** mikroprozesagailuan oinarritutako eguraldi-estazio bat garatu dugu, ingurumenaren jarraipena egiteko irtenbide eraginkor eta merke bat eskainiz. Estazio honek tenperatura (ºC), hezetasuna (%) eta ihar-puntua (ºC) neurtzen ditu, eta datuak Thingsboard DEMO plataforman bistaratzen dira, modu errazean ikusi eta aztertzeko aukera emanez.  
+**ESP8266** mikroprozesagailuan oinarritutako eguraldi-estazio bat garatu dugu, ingurumenaren jarraipena egiteko irtenbide eraginkor eta merke bat eskainiz. Estazio honek **tenperatura (ºC)**, **hezetasuna (%)** eta **ihar-puntua (ºC)** neurtzen ditu, eta datuak **Thingsboard DEMO** plataforman bistaratzen dira, modu errazean ikusi eta aztertzeko aukera emanez.  
 
 
 <p align="center">
