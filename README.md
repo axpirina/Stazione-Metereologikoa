@@ -113,10 +113,9 @@ Behean aurkituko duzu sare-zirkuituaren eskema. Ziurtatu zure **WiFi**-ra zuzene
 
     Gainera, 2025etik aurrera, honako liburutegi konpilatu hauek izan dira nahikoak:
 
-     - SimpleWifiClient by Toemblom
      - IoTtweet by Isaranu
-     - DHT Sensor Library by Adafruit
      - PubSubClient by Nick O`Leary
+     - DHT Sensor Library by Adafruit
 
 
 ## Arduino Kodea
