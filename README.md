@@ -91,7 +91,22 @@ Behean aurkituko duzu sare-zirkuituaren eskema. Ziurtatu zure **WiFi**-ra zuzene
 
 > **Oharra:** Mesedez, ziurtatu zure lekuaren arabera zure **WiFi** sarearen konfigurazioa egokia dela.
 
-## Arduino IDEa
+## Pausoz pauso Thingsboard plataforman DEVICE bat sortzen
+LEhenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat sortu behar dugu **Thingsboard**en. Jarraitu hurrengo pausoak:
+
+1. [Thingsboard DEMO ireki](https://demo.thingsboard.io) eta **Device** berria sortu.
+
+<p align="center">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/IDE.jpg" width="600" height="450">
+</p>
+   
+2. **Device** horretan sartu eta **Access token**a kopiatu. Arduino programan txertatu beharko dugu ondoren.
+<p align="center">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Board.png" width="600" height="300">
+</p>
+
+
+## Pausoz Pauso Programa NodeMCU-an txertatzen
 **ESP8266** mikroprozesagailua programatzeko, **Arduino IDE** eta hainbat liburutegi beharko dituzu. Orokorrean, **ESP8266-DHT.ino** fitxategia **NodeMCU**-ra igo behar da Arduino IDE erabiliz. Jarraitu hurrengo pausoak:
 
 1. [Arduino IDE jaitsi](https://www.arduino.cc/en/software)
@@ -100,10 +115,13 @@ Behean aurkituko duzu sare-zirkuituaren eskema. Ziurtatu zure **WiFi**-ra zuzene
   <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/IDE.jpg" width="600" height="450">
 </p>
    
-3. [NodeMCUa instalatu Arduino IDEan](https://programarfacil.com/esp8266/como-programar-nodemcu-ide-arduino/)
-<p align="center">
-  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Board.png" width="600" height="300">
-</p>
+2. **NodeMCU**a **Arduino IDE**an instalatzeko **Files** > **Preferences** > **Aditional Board Manager URLs** atalean ondorengo esteka idatzi.
+   - http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+3. **Plaka** zerrenda instalatzeko **Tools** > **Boards** > **Board Manager...** atalean ondorengo esteka idatzi eta .
+   - **ESP8266** eta **ESP8266 by ESP8266 community** instalatu
+     
+4. [CP2102 Driverrak instalatun](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Deskonprimatu eta **pololu-cp2102-setup-x64.exe** exekutatu.
 
    
 5. Ondorengo liburutegiak **Arduino IDE**an instalatu. Horretarako, ireki **Library Manager** hau egiten: jo **Sketch** > **Include Library** > **Manage Libraries**.
