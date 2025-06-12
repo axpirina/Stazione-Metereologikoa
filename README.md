@@ -297,7 +297,7 @@ delay(5000); // 5sg tako tartea datuak bidaltzen
 Thingsboard plataforman datuak iristen diren jakiteko **Device**era joan eta **Latest Telemetry** atala begiratu beharko dugu:
 
 <p align="center">
-  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Latest.png" width="900" height="450">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Latest.png" width="1200" height="350">
 </p>
    
 
