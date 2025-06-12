@@ -126,7 +126,7 @@ Lehenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat so
    - **ESP8266 by ESP8266 community** instalatu.
 
 <p align="center">
-  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/ESP8266.png" width="1000" height="450">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/ESP8266.png" width="1000" height="350">
 </p>  
 
 4. [CP2102 Driverrak instalatu](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Jaitsitako artxiboa deskonprimatu eta: 
