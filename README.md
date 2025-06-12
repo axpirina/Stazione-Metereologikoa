@@ -121,20 +121,21 @@ Lehenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat so
 3. **Plaka** zerrenda instalatzeko **Tools** > **Boards** > **Board Manager....** atalean **ESP8266** idatzi eta .
    - **ESP8266 by ESP8266 community** instalatu.
      
-4. [CP2102 Driverrak instalatun](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Deskonprimatu eta **pololu-cp2102-setup-x64.exe** exekutatu.
+4. [CP2102 Driverrak instalatu](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Jaitsitako artxiboa deskonprimatu eta **pololu-cp2102-setup-x64.exe** exekutatu.
 
    
-5. Ondorengo liburutegiak **Arduino IDE**an instalatu. Horretarako, ireki **Library Manager** hau egiten: jo **Sketch** > **Include Library** > **Manage Libraries**.
+5. Ondorengo liburutegiak **Arduino IDE**an instalatu. Horretarako, ireki **Library Manager** hau egiten: jo **Sketch** > **Include Library** > **Manage Libraries** eta azpiko liburutegiak aurkitu.
    - ESP8266WiFi.h
    - PubSubClient.h
    - DHT.h
 
-    Gainera, 2025etik aurrera, honako liburutegi konpilatu hauek izan dira nahikoak:
+    Aurkitzen dituzuenean azalduko zaizkizuen zerrendatik ondorengo liburutegia sortak instalatu:
 
      - IoTtweet by Isaranu
      - PubSubClient by Nick O`Leary
      - DHT Sensor Library by Adafruit
 
+6. Hurrengo atalean aurkituko duzuen **Arduino kodea** moldatu eta  **NodeMCU**ra bidaltzea soilik geratzen zaizue. 
 
 ## Arduino Kodea
 Jarraian emandako **Arduino kodea** igo **NodeMCU**-ra. Denak ondo joan badira, aurrerago kodea gehiago parametrizatzeko atala aurkituko duzu.
