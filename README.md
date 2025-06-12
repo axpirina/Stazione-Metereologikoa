@@ -133,7 +133,7 @@ Lehenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat so
    - **pololu-cp2102-setup-x64.exe** exekutatu.
 
 <p align="center">
-  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Pololu.png" width="1200" height="350">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Pololu.png" width="1200" height="250">
 </p> 
    
 5. Ondorengo liburutegiak **Arduino IDE**an instalatu. Horretarako, ireki **Library Manager** hau egiten: jo **Sketch** > **Include Library** > **Manage Libraries** eta azpiko liburutegiak aurkitu.
