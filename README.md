@@ -123,9 +123,6 @@ Lehenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat so
 
 4. [CP2102 Driverrak instalatu](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Jaitsitako artxiboa deskonprimatu eta: 
    - **pololu-cp2102-setup-x64.exe** exekutatu.
-     
-4. [CP2102 Driverrak instalatu](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Jaitsitako artxiboa deskonprimatu eta: 
-    - **pololu-cp2102-setup-x64.exe** exekutatu.
    
 5. Ondorengo liburutegiak **Arduino IDE**an instalatu. Horretarako, ireki **Library Manager** hau egiten: jo **Sketch** > **Include Library** > **Manage Libraries** eta azpiko liburutegiak aurkitu.
    - ESP8266WiFi.h
