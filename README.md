@@ -293,6 +293,14 @@ const char* topic = "v1/devices/me/telemetry";   // Horrela de Thingsboard-en AP
 delay(5000); // 5sg tako tartea datuak bidaltzen
 ```
 
+## Pausoz pauso Thingsboard plataforman datuak jasotzen
+Thingsboard plataforman datuak iristen diren jakiteko **Device**era joan eta **Latest Telemetry** atala begiratu beharko dugu:
+
+<p align="center">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Latest.png" width="900" height="450">
+</p>
+   
+
 ## Estekak                            
  
 Diy IOT Tknika [Diy IOT Tknika](https://www.youtube.com/watch?v=z61bxGR6Poo&list=PLOYSs5_FlYNtzRIuRgQhgzTNdCzludb6r&index=24)  
