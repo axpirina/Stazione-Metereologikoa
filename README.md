@@ -118,11 +118,11 @@ Lehenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat so
 2. **NodeMCU**a **Arduino IDE**an instalatzeko **Files** > **Preferences** > **Aditional Board Manager URLs** atalean ondorengo esteka idatzi.
    - http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
-3. **Plaka** zerrenda instalatzeko **Tools** > **Boards** > **Board Manager....** atalean **ESP8266** idatzi eta .
+3. **Plaka** zerrenda instalatzeko **Tools** > **Boards** > **Board Manager....** atalean **ESP8266** idatzi eta:
    - **ESP8266 by ESP8266 community** instalatu.
      
-4. [CP2102 Driverrak instalatu](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Jaitsitako artxiboa deskonprimatu eta **pololu-cp2102-setup-x64.exe** exekutatu.
-
+4. [CP2102 Driverrak instalatu](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Jaitsitako artxiboa deskonprimatu eta: 
+- **pololu-cp2102-setup-x64.exe** exekutatu.
    
 5. Ondorengo liburutegiak **Arduino IDE**an instalatu. Horretarako, ireki **Library Manager** hau egiten: jo **Sketch** > **Include Library** > **Manage Libraries** eta azpiko liburutegiak aurkitu.
    - ESP8266WiFi.h
