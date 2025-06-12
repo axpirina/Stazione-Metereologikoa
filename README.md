@@ -97,12 +97,12 @@ Lehenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat so
 1. [Thingsboard DEMO ireki](https://demo.thingsboard.io) eta **Device** berria sortu.
 
 <p align="center">
-  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Device.png" width="600" height="450">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Device.png" width="900" height="450">
 </p>
    
 2. **Device** horretan sartu eta **Access token**a kopiatu. Arduino programan txertatu beharko dugu ondoren.
 <p align="center">
-  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/AccessToken.png" width="600" height="300">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/AccessToken.png" width="800" height="300">
 </p>
 
 
