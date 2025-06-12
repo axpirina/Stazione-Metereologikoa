@@ -118,8 +118,8 @@ Lehenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat so
 2. **NodeMCU**a **Arduino IDE**an instalatzeko **Files** > **Preferences** > **Aditional Board Manager URLs** atalean ondorengo esteka idatzi.
    - http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
-3. **Plaka** zerrenda instalatzeko **Tools** > **Boards** > **Board Manager...** atalean ondorengo esteka idatzi eta .
-   - **ESP8266** eta **ESP8266 by ESP8266 community** instalatu
+3. **Plaka** zerrenda instalatzeko **Tools** > **Boards** > **Board Manager....** atalean **ESP8266** idatzi eta .
+   - **ESP8266 by ESP8266 community** instalatu.
      
 4. [CP2102 Driverrak instalatun](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Deskonprimatu eta **pololu-cp2102-setup-x64.exe** exekutatu.
 
