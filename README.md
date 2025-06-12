@@ -92,7 +92,7 @@ Behean aurkituko duzu sare-zirkuituaren eskema. Ziurtatu zure **WiFi**-ra zuzene
 > **Oharra:** Mesedez, ziurtatu zure lekuaren arabera zure **WiFi** sarearen konfigurazioa egokia dela.
 
 ## Pausoz pauso Thingsboard plataforman DEVICE bat sortzen
-LEhenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat sortu behar dugu **Thingsboard**en. Jarraitu hurrengo pausoak:
+Lehenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat sortu behar dugu **Thingsboard**en. Jarraitu hurrengo pausoak:
 
 1. [Thingsboard DEMO ireki](https://demo.thingsboard.io) eta **Device** berria sortu.
 
