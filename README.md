@@ -131,6 +131,10 @@ Lehenengo lainora bidaliko ditugun datuak biltegiratuko dituen **Device** bat so
 
 4. [CP2102 Driverrak instalatu](https://www.pololu.com/file/0J14/pololu-cp2102-windows-220616.zip). Jaitsitako artxiboa deskonprimatu eta: 
    - **pololu-cp2102-setup-x64.exe** exekutatu.
+
+<p align="center">
+  <img src="https://axpirina.github.io/Stazione-Metereologikoa/Irudiak/Pololu" width="1200" height="200">
+</p> 
    
 5. Ondorengo liburutegiak **Arduino IDE**an instalatu. Horretarako, ireki **Library Manager** hau egiten: jo **Sketch** > **Include Library** > **Manage Libraries** eta azpiko liburutegiak aurkitu.
    - ESP8266WiFi.h
