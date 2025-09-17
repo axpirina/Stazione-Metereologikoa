@@ -130,8 +130,8 @@ By Axpi.
 #include <DHT.h>
 
 // WiFi and MQTT configuration
-const char* ssid = "yourWiFiSSID";    // Give your WIFI name
-const char* password = "yourWiFiPassword";   // Give your WIFI password 
+const char* ssid = "yourWiFiSSID";    // Give your WIFI name -- OLP
+const char* password = "yourWiFiPassword";   // Give your WIFI password -- oteitzaLP
 const char* mqtt_server = "demo.thingsboard.io";  // Leave as it is
 
 // MQTT authentication
